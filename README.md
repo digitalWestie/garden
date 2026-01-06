@@ -104,6 +104,28 @@ bin/bridgetown console
 
 ## Deployment
 
-You can deploy Bridgetown sites on hosts like Render or Vercel as well as traditional web servers by simply building and copying the output folder to your HTML root.
+This site is deployed to [GitHub Pages](https://digitalwestie.github.io/garden/) using GitHub Actions.
+
+### Automated Deployment
+
+The site automatically builds and deploys when you push to the `deploy` branch. The GitHub Actions workflow (`.github/workflows/deploy.yml`) handles:
+
+1. Building the site with Ruby and Node.js
+2. Running `bundle exec rake deploy`
+3. Deploying the `output` folder to GitHub Pages
+
+### Manual Deployment
+
+To build the site locally:
+
+```sh
+bundle exec rake deploy
+```
+
+This will create the static site in the `output/` directory.
+
+### Other Deployment Options
+
+You can also deploy Bridgetown sites on hosts like Render or Vercel as well as traditional web servers by simply building and copying the output folder to your HTML root.
 
 > Read the [Bridgetown Deployment Documentation](https://www.bridgetownrb.com/docs/deployment) for more information.

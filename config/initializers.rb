@@ -16,7 +16,10 @@
 
 Bridgetown.configure do |config|
   # The base hostname & protocol for your site, e.g. https://example.com
-  url ""
+  url "https://digitalwestie.github.io"
+  
+  # Base path for GitHub Pages (repository name)
+  base_path "/garden"
 
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
