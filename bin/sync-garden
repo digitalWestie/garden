@@ -178,6 +178,8 @@ if [[ "${DRY_RUN}" -eq 0 ]]; then
       printf -- "---\n"
       printf -- "layout: obsidian\n"
       printf -- "title: %s\n" "${title}"
+      # YAML single-quoted value; double any apostrophe in the filename
+      printf -- "filename: '%s'\n" "${base//\'/\'\'}"
       printf -- "---\n\n"
       cat "${file}"
     } > "${tmp_file}"

@@ -7,5 +7,5 @@ title: Drafts
 
 Notes in this folder:
 
-- [Introducing ourselves](./Introducing%20ourselves/)
+- [introducing ourselves](./introducing-ourselves/)
 - [test / My test](./test/My%20test/)

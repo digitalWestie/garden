@@ -7,6 +7,7 @@
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
     <main>
+      <%= render Shared::GardenBreadcrumb.new(resource: resource) %>
       <%= yield %>
     </main>
 

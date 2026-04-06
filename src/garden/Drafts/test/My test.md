@@ -1,6 +1,7 @@
 ---
 layout: obsidian
 title: My test
+filename: 'My test.md'
 ---
 
-It's neat! See [Introducing ourselves](/rgianni-site/garden/Drafts/Introducing%20ourselves/) also
+It's neat! See [introducing-ourselves](/rgianni-site/garden/Drafts/introducing-ourselves/) also

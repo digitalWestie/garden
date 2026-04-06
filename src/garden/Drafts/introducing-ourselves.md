@@ -1,6 +1,7 @@
 ---
 layout: obsidian
-title: Introducing ourselves
+title: introducing ourselves
+filename: 'introducing-ourselves.md'
 ---
 
 [[README|Garden readme]]

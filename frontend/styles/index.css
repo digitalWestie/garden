@@ -57,6 +57,26 @@ body > nav a {
   text-decoration: none;
 }
 
+.garden-breadcrumb {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0 0 1.25rem;
+  line-height: 1.4;
+}
+
+.garden-breadcrumb a {
+  color: var(--action-color);
+}
+
+.garden-breadcrumb-current {
+  color: var(--body-color);
+  font-weight: 600;
+}
+
+.garden-breadcrumb-sep {
+  color: #999;
+}
+
 main {
   margin: 2rem auto 4rem;
   max-width: 65rem;
