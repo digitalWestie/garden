@@ -5,8 +5,16 @@ title: Garden
 
 # Garden
 
-This section contains selected notes synced from my Obsidian vault.
+This section contains selected works synced from my Obsidian vault.
 
-Browse synced files in this folder:
+Browse by folder:
 
-- [Open the garden index](/garden/)
+
+
+
+
+
+
+<!-- BEGIN:GARDEN_LINKS -->
+- [Drafts](./garden/Drafts/)
+<!-- END:GARDEN_LINKS -->

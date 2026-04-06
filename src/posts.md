@@ -3,6 +3,8 @@ layout: page
 title: Posts
 ---
 
+# Posts
+
 <ul>
   <% collections.posts.each do |post| %>
     <li>

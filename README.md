@@ -130,17 +130,27 @@ bin/sync-garden --source ~/obsidian-main --rules .garden-include
 - lines beginning with `!` are **excludes**
 - blank lines and `# comments` are ignored
 
+After syncing (non-dry-run), the command also:
+
+- runs [`bin/_garden_markdown_transform.rb`](bin/_garden_markdown_transform.rb) (Ruby, via `bundle exec ruby`) to turn Obsidian image embeds `![[path/to/file]]` into Markdown `![](…)` with paths relative to each note (skips `**/index.md`)
+- adds minimal front matter to synced markdown files that do not already start with YAML (skips `**/index.md`)
+- writes `src/garden/<Folder>/index.md` for each top-level folder under `src/garden/`, listing **all** `.md` notes under that folder **recursively** (excluding only that folder’s `index.md`), with relative links like `./Sub/My%20Note/`
+- updates the `<!-- BEGIN:GARDEN_LINKS -->` block in `src/garden.md` with **folder** links (`./garden/<Folder>/`), plus an optional **Root notes** subsection for `.md` files sitting directly under `src/garden/`
+
+`[[wikilink]]` text links are not rewritten; only `![[…]]` image-style embeds are handled.
+
 Typical workflow:
+
 1. Update `.garden-include`
 2. Run `bin/sync-garden`
-3. Review changes in `src/garden/`
+3. Review changes in `src/garden/`, per-folder `index.md` files, and `src/garden.md`
 4. Commit synced markdown/assets as source content
 
 Bridgetown then converts markdown to HTML at build time and publishes `output/` during deploy.
 
 ## Deployment
 
-This site is deployed to [GitHub Pages](https://digitalwestie.github.io/garden/) using GitHub Actions.
+This site is deployed to [GitHub Pages](https://digitalwestie.github.io/rgianni-site/) using GitHub Actions.
 
 ### Automated Deployment
 

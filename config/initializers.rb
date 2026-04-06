@@ -19,7 +19,7 @@ Bridgetown.configure do |config|
   url "https://digitalwestie.github.io"
   
   # Base path for GitHub Pages (repository name)
-  base_path "/garden"
+  base_path "/rgianni-site"
 
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
