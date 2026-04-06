@@ -1,0 +1,16 @@
+# Include rules for syncing from ~/obsidian-main into src/garden.
+# Gitignore-style patterns:
+# - Lines beginning with ! are excludes
+# - Blank lines and comments are ignored
+
+# Include selected folders
+# garden/**
+Drafts/**
+
+# Include selected root files
+# README.md
+
+# Exclude vault internals and private content
+!.obsidian/**
+!**/.DS_Store
+!**/private/**

@@ -102,6 +102,42 @@ bin/bridgetown console
 - **Front matter**: Use front matter to add metadata, custom layouts, and permalinks
 - **Obsidian compatibility**: Markdown files can be written in Obsidian and synced to `src/` or `src/_posts/`
 
+### Garden Sync from Obsidian
+
+The site includes a dedicated `garden` section and a sync command for selected notes from your Obsidian vault.
+
+**Default paths**:
+- Source vault: `~/obsidian-main`
+- Include rules: `.garden-include`
+- Destination: `src/garden/`
+
+Run:
+
+```sh
+bin/sync-garden
+```
+
+Useful options:
+
+```sh
+bin/sync-garden --dry-run
+bin/sync-garden --verbose
+bin/sync-garden --source ~/obsidian-main --rules .garden-include
+```
+
+`bin/sync-garden` reads gitignore-style patterns from `.garden-include`:
+- regular lines are **includes**
+- lines beginning with `!` are **excludes**
+- blank lines and `# comments` are ignored
+
+Typical workflow:
+1. Update `.garden-include`
+2. Run `bin/sync-garden`
+3. Review changes in `src/garden/`
+4. Commit synced markdown/assets as source content
+
+Bridgetown then converts markdown to HTML at build time and publishes `output/` during deploy.
+
 ## Deployment
 
 This site is deployed to [GitHub Pages](https://digitalwestie.github.io/garden/) using GitHub Actions.
