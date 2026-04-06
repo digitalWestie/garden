@@ -21,6 +21,15 @@ Bridgetown.configure do |config|
   # Base path for GitHub Pages (repository name)
   base_path "/rgianni-site"
 
+  # Permalink: top-level `permalink "…"` applies to **posts** (default: pretty). The **pages**
+  # collection uses `/:locale/:path/` (see bridgetown-core Collection#default_configured_permalink).
+  # Setting `collections pages: { permalink: "/:locale/:path.*" }` emits `.html` per file but
+  # flattens URLs (e.g. garden.md -> /garden.html instead of /garden/), which breaks base_path
+  # navigation and sync-generated links—so we keep the default pages permalink and use
+  # base-path wikilinks in bin/_garden_markdown_transform.rb instead.
+  #
+  # https://www.bridgetownrb.com/docs/content/permalinks
+
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
 

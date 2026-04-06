@@ -132,12 +132,15 @@ bin/sync-garden --source ~/obsidian-main --rules .garden-include
 
 After syncing (non-dry-run), the command also:
 
-- runs [`bin/_garden_markdown_transform.rb`](bin/_garden_markdown_transform.rb) (Ruby, via `bundle exec ruby`) to turn Obsidian image embeds `![[path/to/file]]` into Markdown `![](…)` with paths relative to each note (skips `**/index.md`)
+- runs [`bin/_garden_markdown_transform.rb`](bin/_garden_markdown_transform.rb) (Ruby, via `bundle exec ruby`) to adjust Obsidian syntax in note bodies (skips `**/index.md`):
+  - image embeds `![[path/to/file]]` → Markdown `![](…)` (relative to the note when the file exists)
+  - wikilinks `[[Note]]`, `[[folder/Note]]`, `[[Note|label]]`, `[[Note#Heading]]`, and block refs `[[Note#^id]]` → Markdown links using **root-relative URLs** under [`base_path`](config/initializers.rb), then the **basename of the sync folder** (e.g. `src/garden` → `/rgianni-site/garden/Drafts/My%20Note/`) so they work from any page depth; heading → `#slug`; duplicate titles warn and pick a deterministic file; unresolved links stay as `[[…]]` with a warning
+- `bin/sync-garden` parses `base_path` from `config/initializers.rb` for those URLs. Override with **`GARDEN_SITE_BASE_PATH`** if needed. Override the path segment with **`GARDEN_URL_SEGMENT`** if the published URL prefix differs from the folder name. If you ever switch pages to file-style output (`.html` instead of trailing `/`), set **`GARDEN_PAGE_URL_SUFFIX=.html`** for wikilink targets.
 - adds minimal front matter to synced markdown files that do not already start with YAML (skips `**/index.md`)
 - writes `src/garden/<Folder>/index.md` for each top-level folder under `src/garden/`, listing **all** `.md` notes under that folder **recursively** (excluding only that folder’s `index.md`), with relative links like `./Sub/My%20Note/`
 - updates the `<!-- BEGIN:GARDEN_LINKS -->` block in `src/garden.md` with **folder** links (`./garden/<Folder>/`), plus an optional **Root notes** subsection for `.md` files sitting directly under `src/garden/`
 
-`[[wikilink]]` text links are not rewritten; only `![[…]]` image-style embeds are handled.
+**Permalinks (Bridgetown):** the top-level `permalink` setting applies to **posts**. The **pages** collection (including `src/garden/`) defaults to directory-style URLs (`/:locale/:path/`). Using `collections pages: { permalink: "/:locale/:path.*" }` flattens many routes (e.g. `garden.html` instead of `garden/index.html`); this project keeps the default pages permalink and relies on base-path wikilinks instead. See [Permalinks | Bridgetown](https://www.bridgetownrb.com/docs/content/permalinks).
 
 Typical workflow:
 

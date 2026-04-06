@@ -9,6 +9,18 @@ DEST_DIR="${PROJECT_ROOT}/src/garden"
 RULES_FILE="${PROJECT_ROOT}/.garden-include"
 TRANSFORM_RB="${SCRIPT_DIR}/_garden_markdown_transform.rb"
 
+# Match Bridgetown base_path in config/initializers.rb (wikilink hrefs). Override with GARDEN_SITE_BASE_PATH.
+SITE_BASE_PATH="${GARDEN_SITE_BASE_PATH:-}"
+if [[ -z "${SITE_BASE_PATH}" ]]; then
+  SITE_BASE_PATH="$(
+    ruby -e '
+      s = File.read(File.join(ARGV[0], "config/initializers.rb"))
+      m = s.match(/base_path\s+"([^"]+)"/)
+      print(m ? m[1] : "/rgianni-site")
+    ' "${PROJECT_ROOT}"
+  )"
+fi
+
 DRY_RUN=0
 VERBOSE=0
 DELETE=1
@@ -28,6 +40,10 @@ Options:
   --source PATH  Override source vault directory (default: ~/obsidian-main)
   --rules PATH   Override include rules file (default: .garden-include)
   -h, --help     Show this help
+
+Environment:
+  GARDEN_SITE_BASE_PATH   Prefix for generated wikilink URLs (default: parse config/initializers.rb base_path)
+  GARDEN_URL_SEGMENT      First path segment after base_path for wikilinks (default: basename of sync dest, usually garden)
 EOF
 }
 
@@ -134,12 +150,13 @@ echo "Syncing Obsidian content:"
 echo "  source: ${SOURCE_DIR}"
 echo "  destination: ${DEST_DIR}"
 echo "  rules: ${RULES_FILE}"
+echo "  site base path (wikilinks): ${SITE_BASE_PATH}"
 echo
 
 rsync "${RSYNC_FLAGS[@]}" "${SOURCE_DIR}/" "${DEST_DIR}/"
 
 if [[ "${DRY_RUN}" -eq 0 ]]; then
-  (cd "${PROJECT_ROOT}" && bundle exec ruby "${TRANSFORM_RB}" "${DEST_DIR}")
+  (cd "${PROJECT_ROOT}" && bundle exec ruby "${TRANSFORM_RB}" "${DEST_DIR}" "${SITE_BASE_PATH}")
 
   front_matterized=0
   while IFS= read -r -d '' file; do
