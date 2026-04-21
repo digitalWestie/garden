@@ -172,14 +172,22 @@ if [[ "${DRY_RUN}" -eq 0 ]]; then
     base_name="$(basename "${file}" .md)"
     title="${base_name//_/ }"
     title="${title//-/ }"
+    # Normalized slug: e.g. "First question.md" -> first-question.md (lowercase, non-alnum -> hyphen)
+    filename_normalized="$(
+      (cd "${PROJECT_ROOT}" && ruby -e '
+        stem = File.basename(ARGV[0], ".md")
+        s = stem.downcase.gsub(/[^a-z0-9]+/, "-").delete_prefix("-").delete_suffix("-").squeeze("-")
+        s = "note" if s.empty?
+        print "#{s}.md"
+      ' -- "${base}")
+    )"
     tmp_file="$(mktemp)"
 
     {
       printf -- "---\n"
       printf -- "layout: obsidian\n"
       printf -- "title: %s\n" "${title}"
-      # YAML single-quoted value; double any apostrophe in the filename
-      printf -- "filename: '%s'\n" "${base//\'/\'\'}"
+      printf -- "filename: %s\n" "${filename_normalized}"
       printf -- "---\n\n"
       cat "${file}"
     } > "${tmp_file}"
@@ -263,7 +271,9 @@ if [[ "${DRY_RUN}" -eq 0 ]]; then
   ' "${GARDEN_PAGE}" > "${tmp_garden}"
 
   {
-    cat "${tmp_garden}"
+    # Collapse trailing blank lines so we don't accumulate an extra line before the
+    # markers on every sync; then one newline before BEGIN for markdown spacing.
+    (cd "${PROJECT_ROOT}" && ruby -e 'print File.read(ARGV[0]).sub(/\n+\z/, "\n")' -- "${tmp_garden}")
     printf "\n<!-- BEGIN:GARDEN_LINKS -->\n"
     if [[ "${folder_count}" -eq 0 ]] && [[ "${root_count}" -eq 0 ]]; then
       printf "_No synced markdown notes found yet._\n"

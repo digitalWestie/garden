@@ -17,6 +17,9 @@ Then navigate to [localhost:4000](http://localhost:4000/)!
 ### Commands
 
 ```sh
+# sync garden from obsidian
+bin/sync-garden
+
 # running locally
 bin/bridgetown start
 
@@ -136,8 +139,8 @@ After syncing (non-dry-run), the command also:
   - image embeds `![[path/to/file]]` → Markdown `![](…)` (relative to the note when the file exists)
   - wikilinks `[[Note]]`, `[[folder/Note]]`, `[[Note|label]]`, `[[Note#Heading]]`, and block refs `[[Note#^id]]` → Markdown links using **root-relative URLs** under [`base_path`](config/initializers.rb), then the **basename of the sync folder** (e.g. `src/garden` → `/rgianni-site/garden/Drafts/My%20Note/`) so they work from any page depth; heading → `#slug`; duplicate titles warn and pick a deterministic file; unresolved links stay as `[[…]]` with a warning
 - `bin/sync-garden` parses `base_path` from `config/initializers.rb` for those URLs. Override with **`GARDEN_SITE_BASE_PATH`** if needed. Override the path segment with **`GARDEN_URL_SEGMENT`** if the published URL prefix differs from the folder name. If you ever switch pages to file-style output (`.html` instead of trailing `/`), set **`GARDEN_PAGE_URL_SUFFIX=.html`** for wikilink targets.
-- adds minimal front matter to synced markdown files that do not already start with YAML (skips `**/index.md`): `layout: obsidian`, `title` (humanized from the `.md` basename), and **`filename`** (the vault filename including `.md`, YAML single-quoted when needed). Files that already begin with `---` are left unchanged, so they will not gain `filename` until you add it yourself or strip front matter and re-sync.
-- **Breadcrumbs:** pages under `src/garden/` (and `src/garden.md`) show a trail above the content, e.g. `home / garden / Drafts / My note.md`, with ` / ` between parts. Folder `index.md` pages end on the folder title (e.g. `Drafts`); notes end on `filename` from front matter, or the `.md` basename if `filename` is missing.
+- adds minimal front matter to synced markdown files that do not already start with YAML (skips `**/index.md`): `layout: obsidian`, `title` (humanized from the `.md` basename), and **`filename`** (a **normalized** slug of that basename: lowercase, runs of non-alphanumeric characters become a single hyphen, e.g. `First question.md` → `first-question.md`). Files that already begin with `---` are left unchanged, so they will not gain `filename` until you add it yourself or strip front matter and re-sync.
+- **Breadcrumbs:** pages under `src/garden/` (and `src/garden.md`) show a trail above the content, e.g. `home / garden / Drafts / my-note.md`, with ` / ` between parts. Folder `index.md` pages end on the folder title (e.g. `Drafts`); notes end on `filename` from front matter, or the same normalized slug from the source basename if `filename` is missing.
 - writes `src/garden/<Folder>/index.md` for each top-level folder under `src/garden/`, listing **all** `.md` notes under that folder **recursively** (excluding only that folder’s `index.md`), with relative links like `./Sub/My%20Note/`
 - updates the `<!-- BEGIN:GARDEN_LINKS -->` block in `src/garden.md` with **folder** links (`./garden/<Folder>/`), plus an optional **Root notes** subsection for `.md` files sitting directly under `src/garden/`
 

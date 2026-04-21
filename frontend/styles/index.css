@@ -1,71 +1,138 @@
 :root {
-  --body-background: #f2f2f2;
-  --body-color: #444;
-  --heading-color: black;
-  --action-color: #d64045;
+  --canvas: #f5f2e9;
+  --dark-canvas: #BEA971;
+  --grid-line: #e0d7c1;
+  --border-line: #65541c;
+  --accent-gold: #d4af37;
+  --ink: #333333;
+  --ultramarine: #002fa7;
+  --indigo-void: #0040e4;
+  --contrast-rust: #a84d3b;
+
+  --body-background: var(--canvas);
+  --body-color: var(--ink);
+  --heading-color: var(--ink);
+  --action-color: var(--ink);
+  --frame-border: 1px solid var(--border-line);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--body-background);
+  margin: 0;
+  padding: 0 0.75rem;
   color: var(--body-color);
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif;
-  margin: 0 8px;
-  font-size: 108%;
-  line-height: 1.5;
+  font-family: "IBM Plex Mono", "Cascadia Mono", "SFMono-Regular", "Consolas",
+    "Liberation Mono", monospace;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  background-color: var(--body-background);
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      transparent 0,
+      transparent 27px,
+      var(--grid-line) 27px,
+      var(--grid-line) 28px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 27px,
+      var(--grid-line) 27px,
+      var(--grid-line) 28px
+    );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1.25rem;
+  color: var(--heading-color);
+  font-family: "Roboto Slab", "Museo Slab", "Rockwell", "Clarendon", serif;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 {
+  margin: 1rem 0 2.5rem;
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.6rem);
 }
 
 a {
   color: var(--action-color);
   text-decoration: underline;
-  text-decoration-color: #ffb088;
+  text-decoration-color: color-mix(in srgb, var(--accent-gold) 55%, transparent);
+  text-underline-offset: 0.2em;
+  transition: color 120ms linear, text-decoration-color 120ms linear;
 }
 
-h1 {
-  margin: 1rem 0 3rem;
-  text-align: center;
-  font-weight: 900;
-  font-size: 2.5rem;
-  color: var(--heading-color);
-  line-height: 1.2;
+a:hover,
+a:focus-visible {
+  color: var(--accent-gold);
+  text-decoration-color: var(--accent-gold);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 1px solid var(--accent-gold);
+  outline-offset: 2px;
 }
 
 body > header {
-  margin: 1rem;
+  margin: 0.5rem 0;
+  margin-top: 2.5rem;
   text-align: center;
 }
 
-body > header img {
-  display: inline-block;
-  width: 400px;
-  max-width: 100%;
+body > header img.logo {
+  display: block;
+  margin: 1rem auto;
 }
 
 body > nav ul {
-  margin: 2rem 0;
+  margin: 1rem 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  font-size: 1.3rem;
-  font-weight: bold;
+  gap: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 body > nav a {
-  text-decoration: none;
+  text-decoration-thickness: 1px;
 }
 
 .garden-breadcrumb {
-  font-size: 0.95rem;
-  color: #666;
-  margin: 0 0 1.25rem;
-  line-height: 1.4;
+  margin: 0 0 1.5rem;
+  color: color-mix(in srgb, var(--ink) 75%, var(--canvas));
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-transform: lowercase;
 }
 
 .garden-breadcrumb a {
-  color: var(--action-color);
+  color: var(--ink);
 }
 
 .garden-breadcrumb-current {
@@ -74,31 +141,135 @@ body > nav a {
 }
 
 .garden-breadcrumb-sep {
-  color: #999;
+  color: color-mix(in srgb, var(--ink) 45%, var(--canvas));
 }
 
 main {
-  margin: 2rem auto 4rem;
-  max-width: 65rem;
-  min-height: calc(100vh - 200px);
-  padding: 25px 25px 50px;
-  background: white;
-  box-shadow: 2px 3px 3px #ddd;
-  border-radius: 3px;
+  margin: 2.5rem auto 4rem;
+  max-width: 68rem;
+  min-height: calc(100vh - 220px);
+  padding: 2rem 2rem 3.25rem;
+  background: color-mix(in srgb, var(--canvas) 84%, #fff);
+  border: var(--frame-border);
 
   @media (max-width: 500px) {
-    padding: 16px 16px 50px;
+    padding: 1.25rem 1rem 2.5rem;
   }
 }
 
 footer {
-  text-align: center;
   margin-bottom: 4rem;
-  font-size: 1em;
+  text-align: center;
+  font-size: 0.95em;
 }
 
 hr {
-  border: none;
-  border-top: 2px dotted #bbb;
-  margin: 3rem 0;
+  border: 0;
+  border-top: var(--frame-border);
+  margin: 2.75rem 0;
+}
+
+.theme-preview-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin: 1.25rem 0 2rem;
+}
+
+.theme-swatch {
+  min-height: 96px;
+  padding: 0.85rem;
+  border: var(--frame-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.theme-swatch strong {
+  font-family: "Roboto Slab", "Museo Slab", "Rockwell", "Clarendon", serif;
+  font-size: 0.95rem;
+}
+
+.theme-swatch-canvas {
+  background: var(--canvas);
+}
+
+.theme-swatch-grid-line {
+  background: var(--grid-line);
+}
+
+.theme-swatch-accent-gold {
+  background: var(--accent-gold);
+}
+
+.theme-swatch-ink {
+  background: var(--ink);
+  color: var(--canvas);
+}
+
+.theme-swatch-ultramarine {
+  background: var(--ultramarine);
+  color: var(--canvas);
+}
+
+.theme-swatch-indigo-void {
+  background: var(--indigo-void);
+  color: var(--canvas);
+}
+
+.theme-swatch-contrast-rust {
+  background: var(--contrast-rust);
+  color: var(--canvas);
+}
+
+.theme-swatch-dark-canvas {
+  background: var(--dark-canvas);
+  color: var(--ink);
+}
+
+.theme-surface {
+  margin: 1rem 0 2rem;
+  padding: 1rem;
+  border: var(--frame-border);
+  background: color-mix(in srgb, var(--canvas) 88%, #fff);
+}
+
+.theme-dither-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 1rem 0 2rem;
+}
+
+.theme-panel {
+  min-height: 140px;
+  padding: 1rem;
+  border: var(--frame-border);
+}
+
+.theme-status {
+  margin: 1rem 0 2rem;
+  padding: 0.85rem 1rem;
+  border: var(--frame-border);
+}
+
+.theme-dark-canvas-demo {
+  margin: 1rem 0 2rem;
+  padding: 1rem;
+  background: var(--dark-canvas);
+  border: var(--frame-border);
+}
+.grained {
+  background:
+    linear-gradient(to bottom, var(--ultramarine), var(--indigo-void))
+  /* also works with an actual image,
+   * not just with a CSS gradient *
+  url(https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?w=1400)
+    50%/ cover/**/;
+  filter: url(#grainy);
+  width: 400px;
+  height: 400px;
+  border: 1px solid #ccc;
 }

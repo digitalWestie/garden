@@ -56,8 +56,15 @@ class Shared::GardenBreadcrumb < Bridgetown::Component
         humanize_segment(@resource.relative_path.dirname.basename.to_s)
     else
       fn = @resource.data[:filename] || @resource.data["filename"]
-      fn.to_s.presence || "#{@resource.relative_path.basename(".*")}.md"
+      fn.to_s.presence || normalized_filename_from_stem(@resource.relative_path.basename(".*").to_s)
     end
+  end
+
+  # Matches bin/sync-garden slug for generated `filename` when front matter omits it.
+  def normalized_filename_from_stem(stem)
+    s = stem.downcase.gsub(/[^a-z0-9]+/, "-").delete_prefix("-").delete_suffix("-").squeeze("-")
+    s = "note" if s.empty?
+    "#{s}.md"
   end
 
   def build_crumbs
