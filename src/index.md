@@ -3,12 +3,14 @@ layout: page
 title: Home
 ---
 
-# Rory Gianni's Digital Garden
+# Hello
 
-Welcome. Explore the main sections of the site:
+<img class="profile-picture" src="<%= relative_url '/images/moon-profile-d.png' %>" alt="Profile picture" />
 
-- [Projects](/projects/)
-- [Posts](/posts/)
-- [Garden](/garden/)
+You've reached the personal homepage of Rory Gianni.
+
+- [Selected projects](/rgianni-site/projects/)
+- [Posts](/rgianni-site/posts/)
+- [Garden](/rgianni-site/garden/)
 
 The Garden section is synced from selected notes in my Obsidian vault.

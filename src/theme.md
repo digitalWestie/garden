@@ -85,6 +85,23 @@ Use this page to quickly test color combinations, rhythm, and component balance 
   </p>
 </section>
 
+## Dark Canvas Basis Preview
+
+<section class="theme-dark-basis">
+  <h3>Site Region on Dark Canvas</h3>
+  <p>
+    This block remaps local theme values so <code>--dark-canvas</code> acts as the base field with a softened structural grid.
+  </p>
+  <div class="theme-dark-panel">
+    <p>
+      Framed panel sample with body copy, <a href="#">link behavior</a>, and standard border language.
+    </p>
+  </div>
+  <p class="theme-status u-contrast-anchor">
+    Current Status: Dark-canvas baseline with rust anchor.
+  </p>
+</section>
+
 
 ## Dithred Background with SVG Noise
 
