@@ -49,11 +49,38 @@ Use this page to quickly test color combinations, rhythm, and component balance 
 <section class="theme-surface">
   <h3>Olivetti Ledger Block</h3>
   <p>
-    Headers use the slab serif stack while body copy and interface text use the monospace stack.
+    Headers use the slab serif stack while body copy uses Oxygen.
     The frame is flat, precise, and shadowless.
   </p>
   <p>
     <a href="#">Primary link state</a> and <a href="#">accent hover/focus</a> should stay restrained against the paper field.
+  </p>
+</section>
+
+## Font Stack Preview
+
+<section class="theme-surface">
+  <h3 class="font-oxygen">Body Copy in Oxygen</h3>
+  <p class="font-oxygen">
+    The quick brown fox jumps over the lazy dog. 0123456789.
+  </p>
+  <p class="font-oxygen">
+    This is your regular reading rhythm sample to validate weight, x-height, and line spacing.
+  </p>
+  <p class="font-oxygen">
+    /projects /posts /garden :: glyph test -> [] {} () 0123456789
+  </p>
+
+  <h3 class="font-semplicita">Semplicita</h3>
+  <p class="font-semplicita">The quick brown fox jumps over the lazy dog. 0123456789.</p>
+  <p class="font-semplicita">
+    /projects /posts /garden :: glyph test -> [] {} () 0123456789
+  </p>
+
+  <h3 class="font-ibm-plex-mono">Navigation/Marker Mono (IBM Plex Mono)</h3>
+  <p>The quick brown fox jumps over the lazy dog. 0123456789.</p>
+  <p class="font-ibm-plex-mono">
+    /projects /posts /garden :: glyph test -> [] {} () 0123456789
   </p>
 </section>
 

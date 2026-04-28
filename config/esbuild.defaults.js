@@ -334,6 +334,7 @@ export default async (esbuildOptions, ...args) => {
       ".woff": "file",
       ".woff2": "file",
       ".ttf": "file",
+      ".otf": "file",
       ".eot": "file",
     },
     resolveExtensions: [".tsx", ".ts", ".jsx", ".js", ".css", ".scss", ".sass", ".json", ".js.rb"],
