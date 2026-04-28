@@ -162,7 +162,7 @@ h6 {
 }
 
 h1 {
-  margin: 1rem 0 2.5rem;
+  margin: 1rem 0 1rem;
   font-size: clamp(2rem, 4vw, 2.6rem);
 }
 
@@ -237,6 +237,7 @@ body > nav a {
 
 .garden-breadcrumb {
   margin: 0 0 1.5rem;
+  min-height: 1.5rem;
   color: color-mix(in srgb, var(--ink) 75%, var(--canvas));
   font-size: 0.9rem;
   line-height: 1.5;
@@ -257,7 +258,7 @@ body > nav a {
   color: color-mix(in srgb, var(--ink) 45%, var(--canvas));
 }
 
-.post main {
+.post article {
   padding: 2rem 2rem 3.25rem;
   max-width: 68rem;
   @media (max-width: 500px) {
@@ -265,12 +266,16 @@ body > nav a {
   }
 }
 
-main {
-  background: color-mix(in srgb, var(--canvas) 84%, #fff);
+article {
+  background-color: var(--canvas);
   border: var(--frame-border);
   padding: 1rem 2rem;
   min-height: calc(100vh - 220px);
   max-width: 50rem;
+}
+
+.bg-canvas {
+  background-color: var(--canvas);
 }
 
 footer {

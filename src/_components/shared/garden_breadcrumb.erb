@@ -1,6 +1,10 @@
-<nav aria-label="Breadcrumb" class="garden-breadcrumb"><% crumbs.each_with_index do |crumb, i| -%>
-<% if i.positive? %><span class="garden-breadcrumb-sep" aria-hidden="true"> / </span><% end -%>
-<% if crumb[:href] -%>
-<a href="<%= relative_url crumb[:href] %>"><%= crumb[:label] %></a><% else -%>
-<span class="garden-breadcrumb-current" aria-current="page"><%= crumb[:label] %></span><% end -%>
-<% end -%></nav>
+<nav aria-label="Breadcrumb" class="garden-breadcrumb">
+  <% crumbs.each_with_index do |crumb, i| -%>
+    <% if i.positive? %><span class="garden-breadcrumb-sep" aria-hidden="true"> / </span><% end -%>
+    <% if crumb[:href] -%>
+      <a href="<%= relative_url crumb[:href] %>"><%= crumb[:label] %></a>
+    <% else -%>
+      <span class="garden-breadcrumb-current" aria-current="page"><%= crumb[:label] %></span>
+    <% end -%>
+  <% end -%>
+</nav>
