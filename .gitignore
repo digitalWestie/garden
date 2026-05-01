@@ -43,3 +43,11 @@ yarn-debug.log*
 
 devnotes.md
 resources/
+
+# Ignore media
+src/media/
+src/files/
+src/images/
+
+# Ignore garden imports for now
+src/garden/
