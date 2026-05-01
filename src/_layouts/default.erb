@@ -7,8 +7,11 @@
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
     <main>
-      <%= render Shared::GardenBreadcrumb.new(resource: resource) %>
-      <%= yield %>
+      <article>
+        <%= render Shared::GardenBreadcrumb.new(resource: resource) %>
+
+        <%= yield %>
+      </article>
     </main>
 
     <%= render "footer", metadata: site.metadata %>

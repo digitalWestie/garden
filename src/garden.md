@@ -10,5 +10,5 @@ This section contains selected works synced from my Obsidian vault. It's called 
 Browse by folder:
 
 <!-- BEGIN:GARDEN_LINKS -->
-_No synced markdown notes found yet._
+- [Thoughts](./garden/Thoughts/)
 <!-- END:GARDEN_LINKS -->

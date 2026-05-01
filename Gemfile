@@ -34,9 +34,5 @@ gem "bridgetown", "~> 2.0.5"
 # (you can optionally limit this to the "development" group)
 gem "puma", "< 8"
 
-# Uncomment to use the Inspectors API to manipulate the output
-# of your HTML or XML resources:
-# gem "nokogiri", "~> 1.18"
-
 # Or for faster parsing of HTML-only resources via Inspectors, use Nokolexbor:
 # gem "nokolexbor", "~> 0.6"

@@ -161,9 +161,20 @@ h6 {
   text-align: center;
 }
 
+h1.hero {
+  font-size: clamp(2.5rem, 4vw, 4.25rem);
+}
 h1 {
-  margin: 1rem 0 1rem;
-  font-size: clamp(2rem, 4vw, 2.6rem);
+  margin: 2.5rem 0 1.75rem;
+  font-size: clamp(2.25rem, 4vw, 3.0rem);
+}
+h2 {
+  margin: 2.25rem 0 1.25rem;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+}
+h3 {
+  margin: 2rem 0 1.2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
 a {
@@ -258,20 +269,25 @@ body > nav a {
   color: color-mix(in srgb, var(--ink) 45%, var(--canvas));
 }
 
-.post article {
-  padding: 2rem 2rem 3.25rem;
-  max-width: 68rem;
-  @media (max-width: 500px) {
-    padding: 1.25rem 1rem 2.5rem;
-  }
-}
-
 article {
   background-color: var(--canvas);
   border: var(--frame-border);
   padding: 1rem 2rem;
   min-height: calc(100vh - 220px);
-  max-width: 50rem;
+  max-width: clamp(22rem, 90vw, 52rem);
+}
+
+.post article {
+  padding: 2rem 2rem 3.25rem;
+  @media (max-width: 500px) {
+    padding: 1.25rem 1rem 2.5rem;
+  }
+}
+
+.post article img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 .bg-canvas {
@@ -288,6 +304,11 @@ hr {
   border: 0;
   border-top: var(--frame-border);
   margin: 2.75rem 0;
+}
+
+.kg-card.kg-embed-card iframe{
+  margin: 0 auto;
+  display: block;
 }
 
 .theme-preview-grid {

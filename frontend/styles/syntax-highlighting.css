@@ -11,7 +11,14 @@
 
 pre.highlight {
   padding: 16px;
-  background-color: #F6F8FA;
+  background-color: #faf8f2;
+  font-size: 80%;
+}
+
+pre.highlight code {
+  width: 100%;
+  display: block;
+  overflow-x: scroll;
 }
 
 .highlight .hll { background-color: #ffffcc }

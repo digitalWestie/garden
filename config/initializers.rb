@@ -51,7 +51,7 @@ Bridgetown.configure do |config|
   # configured separately under the `collections` key. Documentation here:
   # https://www.bridgetownrb.com/docs/content/permalinks
   #
-  # permalink "simple"
+  permalink "/posts/:slug/"
 
   # Optionally host your site off a path, e.g. /blog. If you set this option,
   # ensure you use the `relative_url` helper for all links and assets in your HTML.
