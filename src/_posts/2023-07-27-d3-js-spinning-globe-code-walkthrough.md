@@ -4,7 +4,7 @@ slug: d3-js-spinning-globe-code-walkthrough
 createdAt: 2023-07-17 14:08:56.000000000 Z
 updatedAt: 2023-07-27 12:08:40.000000000 Z
 publishedAt: 2023-07-27 12:08:40.000000000 Z
-FeatureImage: "/images/2023/07/globe-cover-1.jpg"
+featureImage: "/images/2023/07/globe-cover-1.jpg"
 date: 2023-07-27 12:08:40 UTC
 layout: post
 categories: creating-with-data

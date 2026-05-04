@@ -4,7 +4,7 @@ slug: leaflet-js-filtering-text
 createdAt: 2022-08-26 09:25:29.000000000 Z
 updatedAt: 2023-07-20 16:10:14.000000000 Z
 publishedAt: 2023-07-20 09:00:00.000000000 Z
-FeatureImage: "/images/2023/07/cover-blog.png"
+featureImage: "/images/2023/07/cover-blog.png"
 date: 2023-07-20 09:00:00 UTC
 layout: post
 categories: creating-with-data

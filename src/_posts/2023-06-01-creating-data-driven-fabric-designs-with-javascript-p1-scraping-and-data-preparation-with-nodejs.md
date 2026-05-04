@@ -5,7 +5,7 @@ slug: creating-data-driven-fabric-designs-with-javascript-p1-scraping-and-data-p
 createdAt: 2023-06-01 17:40:58.000000000 Z
 updatedAt: 2023-07-20 16:12:48.000000000 Z
 publishedAt: 2023-06-01 22:15:07.000000000 Z
-FeatureImage: "/images/2023/06/cover-nowords-1.png"
+featureImage: "/images/2023/06/cover-nowords-1.png"
 date: 2023-06-01 22:15:07 UTC
 layout: post
 categories: creating-with-data

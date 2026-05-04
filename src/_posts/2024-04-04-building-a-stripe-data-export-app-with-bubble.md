@@ -4,7 +4,7 @@ slug: building-a-stripe-data-export-app-with-bubble
 createdAt: 2024-04-03 15:29:18.000000000 Z
 updatedAt: 2024-04-04 16:54:59.000000000 Z
 publishedAt: 2024-04-04 16:42:59.000000000 Z
-FeatureImage: "/images/2024/04/Screenshot-from-2024-04-04-17-31-18.png"
+featureImage: "/images/2024/04/Screenshot-from-2024-04-04-17-31-18.png"
 date: 2024-04-04 16:42:59 UTC
 layout: post
 categories: creating-with-data

@@ -4,7 +4,7 @@ slug: dataviz-tech-companies-in-edinburgh
 createdAt: 2023-04-07 14:43:16.000000000 Z
 updatedAt: 2023-04-07 14:53:26.000000000 Z
 publishedAt: 2023-04-07 14:48:42.000000000 Z
-FeatureImage: "/images/2023/04/Screenshot-from-2023-04-07-15-45-46.png"
+featureImage: "/images/2023/04/Screenshot-from-2023-04-07-15-45-46.png"
 date: 2023-04-07 14:48:42 UTC
 layout: post
 categories: creating-with-data

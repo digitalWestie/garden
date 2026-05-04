@@ -4,7 +4,7 @@ slug: the-making-of-super-map-world-part-2
 createdAt: 2024-03-11 16:11:49.000000000 Z
 updatedAt: 2024-04-01 15:15:10.000000000 Z
 publishedAt: 2024-04-01 15:01:22.000000000 Z
-FeatureImage: "/images/2024/04/image-2-3.png"
+featureImage: "/images/2024/04/image-2-3.png"
 date: 2024-04-01 15:01:22 UTC
 layout: post
 categories: creating-with-data

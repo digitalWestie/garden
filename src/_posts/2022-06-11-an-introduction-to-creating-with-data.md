@@ -4,7 +4,7 @@ slug: an-introduction-to-creating-with-data
 createdAt: 2022-06-11 00:05:43.000000000 Z
 updatedAt: 2023-04-23 23:25:35.000000000 Z
 publishedAt: 2022-06-11 00:05:43.000000000 Z
-FeatureImage:
+featureImage:
 date: 2022-06-11 00:05:43 UTC
 layout: post
 categories: creating-with-data

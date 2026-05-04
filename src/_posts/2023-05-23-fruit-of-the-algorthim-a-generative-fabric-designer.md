@@ -4,7 +4,7 @@ slug: fruit-of-the-algorthim-a-generative-fabric-designer
 createdAt: 2023-05-21 20:12:10.000000000 Z
 updatedAt: 2023-06-19 14:52:58.000000000 Z
 publishedAt: 2023-05-23 16:14:37.000000000 Z
-FeatureImage: "/images/2023/05/Screenshot-from-2023-05-22-13-18-43.png"
+featureImage: "/images/2023/05/Screenshot-from-2023-05-22-13-18-43.png"
 date: 2023-05-23 16:14:37 UTC
 layout: post
 categories: creating-with-data

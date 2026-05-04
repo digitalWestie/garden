@@ -5,7 +5,7 @@ slug: creating-data-driven-fabric-designs-with-javascript-part-2
 createdAt: 2023-06-19 14:15:51.000000000 Z
 updatedAt: 2023-06-19 14:44:32.000000000 Z
 publishedAt: 2023-06-19 14:43:15.000000000 Z
-FeatureImage: "/images/2023/06/blog-cover.png"
+featureImage: "/images/2023/06/blog-cover.png"
 date: 2023-06-19 14:43:15 UTC
 layout: post
 categories: creating-with-data

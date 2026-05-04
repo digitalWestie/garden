@@ -4,7 +4,7 @@ slug: capturing-d3-js-animations-with-resvg-and-ffmpeg
 createdAt: 2024-10-29 14:36:15.000000000 Z
 updatedAt: 2024-10-29 18:04:33.000000000 Z
 publishedAt: 2024-10-29 17:28:57.000000000 Z
-FeatureImage: "/images/2024/10/Zeichenfla-che-1-1500x880-1.png"
+featureImage: "/images/2024/10/Zeichenfla-che-1-1500x880-1.png"
 date: 2024-10-29 17:28:57 UTC
 layout: post
 categories: creating-with-data

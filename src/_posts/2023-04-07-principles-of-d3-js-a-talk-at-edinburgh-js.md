@@ -4,7 +4,7 @@ slug: principles-of-d3-js-a-talk-at-edinburgh-js
 createdAt: 2022-12-08 12:03:18.000000000 Z
 updatedAt: 2023-05-30 16:16:21.000000000 Z
 publishedAt: 2023-04-07 14:50:56.000000000 Z
-FeatureImage: "/images/2023/05/Screenshot-from-2023-05-30-17-15-15.png"
+featureImage: "/images/2023/05/Screenshot-from-2023-05-30-17-15-15.png"
 date: 2023-04-07 14:50:56 UTC
 layout: post
 categories: creating-with-data

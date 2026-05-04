@@ -4,7 +4,7 @@ slug: mapping-the-uks-oldest-trademarks-part-1-preparing-data-with-sqlite-and-py
 createdAt: 2023-04-06 22:41:32.000000000 Z
 updatedAt: 2023-04-19 11:43:50.000000000 Z
 publishedAt: 2023-04-19 11:00:00.000000000 Z
-FeatureImage: "/images/2023/04/cover-2.png"
+featureImage: "/images/2023/04/cover-2.png"
 date: 2023-04-19 11:00:00 UTC
 layout: post
 categories: creating-with-data

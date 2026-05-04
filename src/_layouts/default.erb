@@ -7,10 +7,18 @@
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
     <main>
-      <article>
+      <% feature_image_url = relative_url data["featureImage"]%>
+      <article class="<% if feature_image_url.present? %> has-feature-image <% end %>">
         <%= render Shared::GardenBreadcrumb.new(resource: resource) %>
 
-        <%= yield %>
+        <% if feature_image_url.present? %>
+          <div class="feature-image" style="background-image: url('<%= feature_image_url %>');">
+          </div>
+        <% end %>
+
+        <div class="contents">
+          <%= yield %>
+        </div>
       </article>
     </main>
 

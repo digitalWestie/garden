@@ -4,7 +4,7 @@ slug: code-and-learn-set-your-mind-in-motion-with-a-project-vision
 createdAt: 2023-08-10 21:10:20.000000000 Z
 updatedAt: 2023-09-11 11:41:00.000000000 Z
 publishedAt: 2023-08-21 14:22:53.000000000 Z
-FeatureImage: "/images/2023/08/Cajal-Interneuronal-plexuses-RVSD.jpg"
+featureImage: "/images/2023/08/Cajal-Interneuronal-plexuses-RVSD.jpg"
 date: 2023-08-21 14:22:53 UTC
 layout: post
 categories: creating-with-data

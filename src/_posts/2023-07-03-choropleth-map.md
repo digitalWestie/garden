@@ -4,7 +4,7 @@ slug: choropleth-map
 createdAt: 2022-07-31 22:40:22.000000000 Z
 updatedAt: 2023-07-03 16:01:22.000000000 Z
 publishedAt: 2023-07-03 09:14:00.000000000 Z
-FeatureImage: "/images/2023/07/vlcsnap-2023-07-03-16h58m50s308.png"
+featureImage: "/images/2023/07/vlcsnap-2023-07-03-16h58m50s308.png"
 date: 2023-07-03 09:14:00 UTC
 layout: post
 categories: creating-with-data

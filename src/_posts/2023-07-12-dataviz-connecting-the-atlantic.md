@@ -4,7 +4,7 @@ slug: dataviz-connecting-the-atlantic
 createdAt: 2023-07-12 17:41:48.000000000 Z
 updatedAt: 2023-07-28 11:46:58.000000000 Z
 publishedAt: 2023-07-12 18:09:41.000000000 Z
-FeatureImage: "/images/2023/07/Screenshot-from-2023-07-12-18-28-53.png"
+featureImage: "/images/2023/07/Screenshot-from-2023-07-12-18-28-53.png"
 date: 2023-07-12 18:09:41 UTC
 layout: post
 categories: creating-with-data

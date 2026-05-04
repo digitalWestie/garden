@@ -4,7 +4,7 @@ slug: dataviz-the-uks-oldest-trademarks
 createdAt: 2023-04-13 12:42:00.000000000 Z
 updatedAt: 2023-04-13 16:28:03.000000000 Z
 publishedAt: 2023-04-13 16:23:27.000000000 Z
-FeatureImage: "/images/2023/04/trademarks-screenshot.png"
+featureImage: "/images/2023/04/trademarks-screenshot.png"
 date: 2023-04-13 16:23:27 UTC
 layout: post
 categories: creating-with-data

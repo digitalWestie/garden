@@ -4,7 +4,7 @@ slug: exploring-data-from-companies-house
 createdAt: 2023-04-06 21:56:31.000000000 Z
 updatedAt: 2023-05-30 16:11:40.000000000 Z
 publishedAt: 2023-04-07 14:58:00.000000000 Z
-FeatureImage: "/images/2023/05/cover-1.png"
+featureImage: "/images/2023/05/cover-1.png"
 date: 2023-04-07 14:58:00 UTC
 layout: post
 categories: creating-with-data

@@ -4,7 +4,7 @@ slug: mapping-and-filtering-data-with-leaflet-js
 createdAt: 2022-08-12 19:31:02.000000000 Z
 updatedAt: 2023-07-11 14:06:34.000000000 Z
 publishedAt: 2023-07-11 10:54:00.000000000 Z
-FeatureImage: "/images/2023/07/blog-cover.png"
+featureImage: "/images/2023/07/blog-cover.png"
 date: 2023-07-11 10:54:00 UTC
 layout: post
 categories: creating-with-data

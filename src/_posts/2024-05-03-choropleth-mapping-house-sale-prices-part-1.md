@@ -4,7 +4,7 @@ slug: choropleth-mapping-house-sale-prices-part-1
 createdAt: 2024-05-01 15:55:44.000000000 Z
 updatedAt: 2024-08-09 14:02:39.000000000 Z
 publishedAt: 2024-05-03 14:12:48.000000000 Z
-FeatureImage: "/images/2024/08/sss-57-51.png"
+featureImage: "/images/2024/08/sss-57-51.png"
 date: 2024-05-03 14:12:48 UTC
 layout: post
 categories: creating-with-data

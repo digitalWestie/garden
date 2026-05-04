@@ -4,7 +4,7 @@ slug: mapping-the-uks-oldest-trademarks-part-2
 createdAt: 2023-04-18 20:36:57.000000000 Z
 updatedAt: 2023-04-27 11:07:46.000000000 Z
 publishedAt: 2023-04-27 09:57:00.000000000 Z
-FeatureImage: "/images/2023/04/both.png"
+featureImage: "/images/2023/04/both.png"
 date: 2023-04-27 09:57:00 UTC
 layout: post
 categories: creating-with-data

@@ -4,7 +4,7 @@ slug: pannable-chart-d3-screencast
 createdAt: 2022-07-01 23:14:55.000000000 Z
 updatedAt: 2023-05-04 12:43:07.000000000 Z
 publishedAt: 2023-05-04 08:25:00.000000000 Z
-FeatureImage: "/images/2023/05/cover.png"
+featureImage: "/images/2023/05/cover.png"
 date: 2023-05-04 08:25:00 UTC
 layout: post
 categories: creating-with-data
