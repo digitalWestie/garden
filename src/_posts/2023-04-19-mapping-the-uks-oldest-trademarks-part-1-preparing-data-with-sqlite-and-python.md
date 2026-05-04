@@ -18,6 +18,10 @@ In this video, we take a look at the data held by the Intellectual Property Offi
 
 See below for code and notes.
 
+<figure class="kg-card kg-embed-card">
+<iframe width="575" height="325" src="https://www.youtube.com/embed/esRoPoC0Ebg?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Mapping the UK's oldest trademarks // Part 1: Preparing data with SQLite and Python"></iframe>
+</figure>
+
 **Notes**
 
 - In the video I mention the Nice class system, [on the IPO website you can discover classes by searching goods and services](https://www.search-uk-trade-mark-classes.service.gov.uk/searchclasses), and it'll tell you what classes are associated with your search term.
@@ -144,9 +148,9 @@ conn.close()
 # conn.commit()
 ```
 
-SQL Queries
+Sqlite queries
 
-```SQL
+```sql
 # Basic query
 
 SELECT * FROM trademarks LIMIT 10;
@@ -159,9 +163,3 @@ FROM (
 ) AS sub
 GROUP BY postcode_area LIMIT 150;
 ```
-
-
-<!-- GHOST_RECOVERED_EMBEDS -->
-<figure class="kg-card kg-embed-card"><iframe width="575" height="325" src="https://www.youtube.com/embed/esRoPoC0Ebg?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Mapping the UK's oldest trademarks // Part 1: Preparing data with SQLite and Python"></iframe></figure>
-
-<!-- /GHOST_RECOVERED_EMBEDS -->

@@ -28,11 +28,11 @@ Resvg is a powerful tool for rendering and working with SVGs. I've been using Re
 
 If you want to try it out on its own all you need to do is import and write a capture function e.g.
 
-```HTML
+```html
 <script src="https://unpkg.com/@resvg/resvg-wasm"></script>
 ```
 
-```Javascript
+```javascript
 async function captureSvg() {
     // Initialize Resvg WASM
     await resvg.initWasm(
@@ -75,7 +75,7 @@ What we want to do is a little different: capture a PNG every time something cha
 
 This example animates a simple SVG circle and captures each frame. Here's the code for [this example (available on Glitch)](https://creating-with-data.glitch.me/connecting-atlantic-ani/simple.html):
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -197,11 +197,7 @@ document.addEventListener('DOMContentLoaded', animateAndCapture);
 
 ### Result
 
-0:00
-
-/
-
-1×
+<video src="<%= relative_url "/images/2024/10/ball.mp4" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
 
 ### The capture queue
 
@@ -211,7 +207,7 @@ We use `captureQueue` to manage asynchronous frame capturing. Chaining frames in
 
 This approach resolved an issue where D3’s tween function wasn’t running synchronously, leading to duplicated or misordered frames.
 
-```Javascript
+```javascript
 // Frame capture function
 let frameCount = 0;
 let captureQueue = Promise.resolve();
@@ -243,7 +239,7 @@ The GIF I rendered of the transatlantic cable visualisation has a lot more going
 
 Since these transitions use an interpolator I was able to render higher FPS videos by dropping D3 tweens in favour of just capturing renders inside a for loop –
 
-```
+```javascript
 // Use this  ...
 const framesPerMillisecond = FRAME_RATE / 1000;
 const frames = positionDuration * framesPerMillisecond;
@@ -261,8 +257,4 @@ d3.transition().duration(positionDuration).tween("render", () => {
 
 While my browser wasn't able to keep up (i.e. we can't watch the nice animation) it does succesfully produce a smoother video!
 
-0:00
-
-/
-
-1×
+<video src="<%= relative_url "/images/2024/10/map.mp4" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>

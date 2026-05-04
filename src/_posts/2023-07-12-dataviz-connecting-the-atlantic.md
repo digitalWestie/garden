@@ -12,11 +12,8 @@ categories: creating-with-data
 
 [“A treaty of peace has been signed between Austria and Prussia”](https://www.nytimes.com/1866/07/30/archives/by-ocean-telegraph-european-news-to-july-27-highly-important.html) – the first message that was transmitted across the Atlantic via telegraph. That's the first connection that appears in [this animated globe visualisation](https://creating-with-data.glitch.me/connecting-atlantic/index.html). It shows a timeline of various trans-Atlantic subsea telegraph connections starting with the first successfully laid cable in 1866.
 
-0:00
+<video src="<%= relative_url "/images/2023/07/output.mp4" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
 
-/
-
-1×
 
 ### Background
 

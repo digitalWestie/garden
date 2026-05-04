@@ -14,17 +14,16 @@ This video is an introduction to getting data from Companies House. It shows the
 
 In it, I discuss the limitations of the API, particularly when it comes to searching and retrieving non-standard details on multiple companies.  More or less these are the steps I needed to take when creating the [Tech Companies in Edinburgh](https://creating-with-data.glitch.me/edi-tech/index.html) visualisation for [my talk at the Edinburgh.js](<%= url_for("_posts/2023-04-07-principles-of-d3-js-a-talk-at-edinburgh-js.md") %>).
 
+
+<figure class="kg-card kg-embed-card">
+<iframe width="575" height="325" src="https://www.youtube.com/embed/OOvx7TaJNVw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Exploring data from Companies House"></iframe>
+</figure>
+
 Tools used:
 
 - Python with CSV, HTTPX, and JSON libraries (see below for code)
 - cURL
 - LibreOffice Calc
-
-<!-- GHOST_RECOVERED_EMBEDS -->
-<figure class="kg-card kg-embed-card">
-<iframe width="575" height="325" src="https://www.youtube.com/embed/OOvx7TaJNVw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Exploring data from Companies House"></iframe></figure>
-
-<!-- /GHOST_RECOVERED_EMBEDS -->
 
 
 **Notes**

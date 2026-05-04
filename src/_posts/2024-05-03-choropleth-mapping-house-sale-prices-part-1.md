@@ -10,9 +10,7 @@ layout: post
 categories: creating-with-data
 ---
 
-🗺️
-
-_If you're looking [for the dataviz, here it is](https://creating-with-data.glitch.me/scothousing/)._
+🗺️ _If you're looking [for the dataviz, here it is](https://creating-with-data.glitch.me/scothousing/)._
 
 Looking at the stats, the ' [Choropleth code walkthrough](<%= url_for("_posts/2023-07-03-choropleth-map.md") %>)' has been the most popular post/video by far. On that note, I thought I'd do another Choropleth map. This time I've sprinkled in interactivity to demonstrate d3's 'update' behaviour. In this post, I'll outline the rationale for the visualisation and how to prepare the data for it.
 
@@ -24,11 +22,11 @@ All sales (where I live) in Scotland are recorded by the Registers of Scotland (
 
 Those figures are made available for various boundaries including what's called '2011 Intermediate Data Zones' – for a fairly high resolution choropleth map. Here below is the end result:
 
-0:00
+<figure>
+<video src="<%= relative_url "/images/2024/05/output-na.mp4" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
+<figcaption>A video of the visualisation. Alternatively, you can <a href="https://creating-with-data.glitch.me/scothousing/">try the real thing here</a>.</figcaption>
+</figure>
 
-/
-
-1×
 
 A video of the visualisation. Alternatively, you can [try the real thing here](https://creating-with-data.glitch.me/scothousing/).
 
@@ -50,11 +48,11 @@ The pricing dataset exported from the stats hub was in great condition so I didn
 
 Here's a video of the process that might be help:
 
-0:00
+<figure>
+<video src="<%= relative_url "/images/2024/05/data-cart.mp4" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
+<figcaption>Building a 'Data Cart'</figcaption>
+</figure>
 
-/
-
-1×
 
 Building a 'Data Cart'
 
@@ -64,17 +62,14 @@ The Scottish stats hub has a companion spatial data hub - spatialdata.gov.scot w
 
 The boundaries come as ESRI Shapefiles, so they need some conversion before we can use them with the d3-geo functions. For this purpose, [MapShaper is a tremendous tool](https://github.com/mbloch/mapshaper/) that does what we need.
 
-💡
-
-I owe a lot to [this tutorial by Dylan Moriarty](https://moriartynaps.org/command-carto-part-one/) that helped me get a start with MapShaper.
+> 💡 I owe a lot to [this tutorial by Dylan Moriarty](https://moriartynaps.org/command-carto-part-one/) that helped me get a start with MapShaper.
 
 At first I used the MapShaper GUI to open the Shapefiles, and before converting to TopoJSON simplify the map boundaries somewhat.
 
-0:00
-
-/
-
-1×
+<figure>
+<video src="<%= relative_url "/images/2024/05/output-na-1.mp4" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
+<figcaption>Using the 'Simplify' feature in MapShaper</figcaption>
+</figure>
 
 Using the 'Simplify' feature in MapShaper
 
@@ -133,3 +128,4 @@ If you've inspected some of these path elements  you'll have noticed ids for ea
 ![](<%= relative_url "/images/2024/05/image-12.png" %>)
 
 On that note, you can always [view or remix the full visualisation's code on Glitch](https://glitch.com/edit/#!/creating-with-data?path=scothousing%2Findex.html%3A208%3A4).
+

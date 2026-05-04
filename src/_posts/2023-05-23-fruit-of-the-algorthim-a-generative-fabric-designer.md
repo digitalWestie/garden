@@ -40,11 +40,7 @@ As soon as I discovered the archive I began by writing a scraper for the data in
 
 The first version of the shirt visualiser was a scrappy combination of CSS, jQuery and a CC0 image of a shirt I found somewhere on the web. The 'Botanical wear generator' began with a 'Refresh' button that would randomise the images and arrangement of each pattern. Over time I added controls to shift patterns, vary sizing, and filter down to favourite images. It's [over here if you'd like to try it](https://generative-shirts.glitch.me/).
 
-0:00
-
-/
-
-1×
+<video src="<%= relative_url "/images/2023/05/Peek-2021-02-13-23-41.webm" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
 
 By hitting that refresh button lots (and lots) of times I discovered:
 
@@ -74,11 +70,7 @@ This version takes a different approach to the original, in that it takes after 
 
 This version does just that.
 
-0:00
-
-/
-
-1×
+<video src="<%= relative_url "/images/2023/05/Screencast-from-22-05-23-13-28-08.webm" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
 
 Since we can see lots of options I've decided not to bother reproducing all the controls in this version, and just leave in a 'generate more' button.
 

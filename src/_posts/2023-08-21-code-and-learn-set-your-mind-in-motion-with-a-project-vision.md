@@ -26,9 +26,7 @@ Regardless, I ended up proficient in Rails because I took on personal projects, 
 
 There's a terrific post from Ian Johnson called ['How do you learn d3.js?'](https://medium.com/@enjalot/how-do-you-learn-d3-js-ccffc151419b). In it he asks several well-regarded information and visualisation designers about their respective journies. All of them mention a vision of telling a story with data or creating something that didn't exist before.
 
-💬
-
-_...everything I was learning was driven by “I want to do X… now how do I do that?” -_ [Zan Armstrong](https://medium.com/@enjalot/how-do-you-learn-d3-js-ccffc151419b)
+> 💬 _...everything I was learning was driven by “I want to do X… now how do I do that?” -_ [Zan Armstrong](https://medium.com/@enjalot/how-do-you-learn-d3-js-ccffc151419b)
 
 It's reassuring to know this approach works for others and not just me.
 
@@ -44,7 +42,8 @@ You might find it ambitious to set to work on a passion project on day 1 of lear
 
 Carrying that vision with you while you're learning will predispose you to notice important details that crop up in lessons or in your own reading. You can think of this as a net, deployed subsconsciously to gather valuable nuggets of insight.
 
-![](<%= relative_url "/images/2023/08/3334-2.jpg" %>)The net that is cast. This is the [Cingulate Cortex as drawn by Santiago Ramón y Cajal](https://history.nih.gov/pages/viewpage.action?pageId=1016727). This part of the brain is responsible for among many things, learning and memory.
+![](<%= relative_url "/images/2023/08/3334-2.jpg" %>)
+_The net that is cast. This is the [Cingulate Cortex as drawn by Santiago Ramón y Cajal](https://history.nih.gov/pages/viewpage.action?pageId=1016727). This part of the brain is responsible for among many things, learning and memory._
 
 ### Constraints can guide
 

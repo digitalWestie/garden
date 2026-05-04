@@ -157,11 +157,7 @@ Note, D3 has really neat functions for parsing and manipulating colour spaces. I
 
 Since the user can change a number of things about the visualisation, there's a bit of event handling going.
 
-0:00
-
-/
-
-1×
+<video src="<%= relative_url "/images/2024/08/Screencast-from-09-08-24-14-50-25.webm" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
 
 ```javascript
 amountInput.on("input", updateFill);

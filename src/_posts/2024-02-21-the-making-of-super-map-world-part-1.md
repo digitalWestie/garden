@@ -23,7 +23,8 @@ I'll cover:
 - Lessons on launching SMW onto the web
 - Developing an add-on for Adobe Express
 
-TODO: ADD BACK IN VIDEO
+<video src="<%= relative_url "/images/2024/02/FullSMWEditorVideo.mp4" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
+
 
 ### Version 0
 
@@ -33,13 +34,13 @@ Taking a generative design approach is a great way to turn out effective and aes
 
 I began a playing around with d3.js, rendering world maps in different styles.
 
-TODO: ADD BACK IN VIDEO
+<video src="<%= relative_url "/images/2024/02/smw-version1.mp4" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
 
 This version randomly selected colours for the land, water, and (optionally) graticule from a list of [CSS named colours](https://en.wikipedia.org/wiki/Web_colors). Graticule, shadow, and stroke widths were randomly decided too.
 
 This was the job of a `generateStyle` function, that output a `mapStyle` object containing the various visual properties to be applied at time of render. Here's a little snippet from the function:
 
-```
+```javascript
 {
   "land": {
     "hasShadow": false,
@@ -70,7 +71,7 @@ Land, water, graticule, are all elements of any map you might generate. Later on
 
 At first, random selection meant some colours were the same or too close. Landmasses and lines ended up barely visible in the odd rendering. The theme generator needed to correct for contrast so I ended up with a function that reselected until contrast was high enough.
 
-```
+```javascript
 // Function to randomly select pairs of colors until the contrast value is above min
 
 function findColorsWithContrast(color1, requiredContrast) {

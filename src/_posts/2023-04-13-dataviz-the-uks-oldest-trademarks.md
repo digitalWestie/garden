@@ -34,8 +34,4 @@ For quite a while I tried to make it work for both platforms until I discovered 
 
 The key to this was in the [VisualViewport API](https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/scale). Crucially, the [scale property](https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport/scale) which can tell you whether the user has used a pinch interaction to zoom in. If you use a standard mouse scroll or CTRL+ to zoom in, visualViewport.scale will still equal 1 whereas it will increase for a pinch.
 
-0:00
-
-/
-
-1×
+<video src="<%= relative_url "/images/2023/04/Screencast-from-13-04-23-17-09-16.webm" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
