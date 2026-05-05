@@ -280,7 +280,7 @@ body > nav a {
 }
 
 main > article {
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   background-color: var(--canvas);
   border: var(--frame-border);
   min-height: calc(100vh - 220px);
@@ -306,6 +306,10 @@ article.has-feature-image div.article-contents {
   @media (max-width: 500px) {
     padding: 1.25rem 1rem 2.5rem;
   }
+}
+
+div.article-contents > h1 {
+  margin-top: 0;
 }
 
 .post article img {
@@ -569,6 +573,7 @@ hr {
 
 .content-card-excerpt {
   margin: 0.2rem 0 0;
+  font-size: 0.9rem;
 }
 
 .content-card:hover,
