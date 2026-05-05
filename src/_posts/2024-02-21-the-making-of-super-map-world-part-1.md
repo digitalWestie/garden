@@ -7,6 +7,7 @@ publishedAt: 2024-02-21 13:49:55.000000000 Z
 featureImage: "/images/2024/02/cover.png"
 date: 2024-02-21 13:49:55 UTC
 layout: post
+excerpt: "Super Map World is a site that offers over 17,000 maps and map graphics."
 categories: creating-with-data
 ---
 

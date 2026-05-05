@@ -279,23 +279,28 @@ body > nav a {
   color: color-mix(in srgb, var(--ink) 45%, var(--canvas));
 }
 
-article {
+main > article {
   padding: 1rem 2rem;
   background-color: var(--canvas);
   border: var(--frame-border);
   min-height: calc(100vh - 220px);
   max-width: clamp(22rem, 90vw, 52rem);
 }
-article.has-feature-image {
-  padding: 0;
+
+.wide-layout main > article {
+  max-width: clamp(22rem, 90vw, 72rem);
+  background-color: transparent;
+  border: transparent;
 }
+
+article.has-feature-image { padding: 0; }
 article.has-feature-image div.feature-image {
-  width: 100%; height: 450px; background-size: cover; background-position: center;
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
 }
-article div.contents {
-  padding: 0;
-}
-article.has-feature-image div.contents {
+article.has-feature-image div.article-contents {
   padding: 2rem 2rem 3.25rem;
   padding-top: 0;
   @media (max-width: 500px) {
@@ -472,6 +477,109 @@ hr {
   padding: 0.85rem;
   border: var(--frame-border);
   background: var(--panel-bg);
+}
+
+.content-card-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 1.5rem 0 0;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: var(--frame-border);
+  background: color-mix(in srgb, var(--canvas) 92%, #fff);
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.content-card-image-link {
+  display: block;
+  text-decoration: none;
+  border-bottom: var(--frame-border);
+}
+
+.content-card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: color-mix(in srgb, var(--ink) 14%, var(--canvas));
+}
+
+.content-card-image-fallback {
+  display: grid;
+  place-items: center;
+  background-color: var(--canvas);
+  /*
+  background:
+    repeating-linear-gradient(
+      to right,
+      transparent 0,
+      transparent 20px,
+      color-mix(in srgb, var(--grid-line) 70%, transparent) 20px,
+      color-mix(in srgb, var(--grid-line) 70%, transparent) 21px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 20px,
+      color-mix(in srgb, var(--grid-line) 70%, transparent) 20px,
+      color-mix(in srgb, var(--grid-line) 70%, transparent) 21px
+    );*/
+}
+
+.content-card-fallback-logo {
+  width: min(38%, 130px);
+  height: auto;
+  opacity: 0.9;
+  filter: hue-rotate(180deg);
+  filter: brightness(2.0);
+}
+
+.content-card-body {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1rem;
+}
+
+.content-card-title {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+}
+
+.content-card-title a {
+  text-decoration-thickness: 1px;
+}
+
+.content-card-date,
+.content-card-categories {
+  margin: 0;
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--ink) 82%, var(--canvas));
+}
+
+.content-card-categories {
+  font-family: "IBM Plex Mono", "Cascadia Mono", monospace;
+  text-transform: lowercase;
+}
+
+.content-card-excerpt {
+  margin: 0.2rem 0 0;
+}
+
+.content-card:hover,
+.content-card:has(a:focus-visible) {
+  box-shadow: 5px 5px 0 color-mix(in srgb, var(--accent-gold) 50%, transparent);
+}
+
+@media (max-width: 640px) {
+  .content-card-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .grained {
   background:
