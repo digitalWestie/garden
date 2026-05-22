@@ -53,6 +53,16 @@ Bridgetown.configure do |config|
   #
   permalink "/posts/:slug/"
 
+  # Markdown project entries in `src/_projects/` feed the single Projects page;
+  # no per-project HTML pages are generated.
+  collections do
+    projects do
+      output false
+      sort_by :date
+      sort_direction :descending
+    end
+  end
+
   # Optionally host your site off a path, e.g. /blog. If you set this option,
   # ensure you use the `relative_url` helper for all links and assets in your HTML.
   # If you're using esbuild for frontend assets, edit `esbuild.config.js` to
