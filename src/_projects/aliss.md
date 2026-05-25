@@ -1,6 +1,7 @@
 ---
 title: ALISS
-date: 2019-09-01
+date: 2018-03-01
+date_range: 2018-2020
 categories:
   - civic-tech
   - django

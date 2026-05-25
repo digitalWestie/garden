@@ -50,10 +50,10 @@ It took me a while to come up with a schema that could represent all this while 
 
 I came up with a 4 part system for capturing maps:
 
-- MapStyle – represents all the styling information that could be applied to rendering a map.
-- MapConfig – represents a source of geographic data and its relevent metadata.
-- MapFraming – represents how the geographic data is framed and projected. This means projection plus any adjustments such as rotation, scaling, or margins.
-- MapRendering – represents the rendering or a final image generated from all these factors. It has a number, a slug, and ties together these above representations via associations.
+- MapStyle - represents all the styling information that could be applied to rendering a map.
+- MapConfig - represents a source of geographic data and its relevent metadata.
+- MapFraming - represents how the geographic data is framed and projected. This means projection plus any adjustments such as rotation, scaling, or margins.
+- MapRendering - represents the rendering or a final image generated from all these factors. It has a number, a slug, and ties together these above representations via associations.
 
 ![](<%= relative_url "/images/2024/04/image-2.png" %>)ER diagram of how they fit together
 

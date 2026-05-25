@@ -1,6 +1,7 @@
 ---
 title: Code 4 Europe
 date: 2014-07-01
+date_range: 2014-2015
 categories:
   - civic-tech
   - open-data

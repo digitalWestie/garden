@@ -182,4 +182,4 @@ When you zoom and pan the map, the visualisation highlights the highest and lowe
 
 ![](<%= relative_url "/images/2024/08/image.png" %>)
 
-There's a lot to it so I'm going to write a dedicated post on how this bit works – especially as its one of the more challenging features of a visualisation I've worked on!
+There's a lot to it so I'm going to write a dedicated post on how this bit works - especially as its one of the more challenging features of a visualisation I've worked on!

@@ -60,9 +60,12 @@ Selected professional and personal projects.
           <% end %>
         </h2>
 
-        <% if project.date.present? %>
+        <% date_label = project.data["date_range"].presence %>
+        <% if date_label.present? %>
+          <p class="content-card-date"><%= date_label %></p>
+        <% elsif project.date.present? %>
           <p class="content-card-date">
-            <time datetime="<%= project.date.iso8601 %>"><%= project.date.strftime("%-d %b %Y") %></time>
+            <time datetime="<%= project.date.strftime("%Y") %>"><%= project.date.strftime("%Y") %></time>
           </p>
         <% end %>
 

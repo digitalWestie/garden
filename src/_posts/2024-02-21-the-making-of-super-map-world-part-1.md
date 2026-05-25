@@ -128,7 +128,7 @@ Extending the features of the single page experiment, I began to imagine a web-a
 
 Clockwise from top left, RAWGraphs, DataWrapper, Coolors, ColorHunt
 
-The start point was a single html file plus a couple of JS files. The goal was an application that could support users and offer them value added premium features – all while supporting open access.
+The start point was a single html file plus a couple of JS files. The goal was an application that could support users and offer them value added premium features - all while supporting open access.
 
 ### 🎵 I hear that train a-comin'
 

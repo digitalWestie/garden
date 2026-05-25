@@ -18,9 +18,9 @@ In my [SuperMap.world](https://supermap.world/) side-project I'm using D3 to gen
 
 The only problem is compiling video can be a pretty heavy operation (certainly for servers on a side-project budget). Thanks to WebAssembly, we can now get those lazy freeloading clients to do some of the work.
 
-To tip my toe in the water, I've been experimenting with [Resvg](https://github.com/yisibl/resvg-js) and [FFmpeg](https://ffmpegwasm.netlify.app/) (compiled to WASM) to see if I can capture D3.js transitions and render them out to Gif, MP4, or whatever format – no servers req _uired!_
+To tip my toe in the water, I've been experimenting with [Resvg](https://github.com/yisibl/resvg-js) and [FFmpeg](https://ffmpegwasm.netlify.app/) (compiled to WASM) to see if I can capture D3.js transitions and render them out to Gif, MP4, or whatever format - no servers req _uired!_
 
-_Before you ask – yes, I know that rendering to Webcanvas in a raster format then capturing with FFmpeg makes more sense but I have my reasons which I cannot be bothered to explain right now._
+_Before you ask - yes, I know that rendering to Webcanvas in a raster format then capturing with FFmpeg makes more sense but I have my reasons which I cannot be bothered to explain right now._
 
 ### Capturing PNG with Resvg
 
@@ -63,7 +63,7 @@ async function captureSvg() {
 }
 ```
 
-As you'll see above it goes and fetches a .wasm file. Sometimes these files can be quite large – FFmpeg is about 30MB!
+As you'll see above it goes and fetches a .wasm file. Sometimes these files can be quite large - FFmpeg is about 30MB!
 
 In the above example we get a PNG version of the SVG and a download link. We don't want to download a single PNG, but the above is a concise SVG to PNG convert function (NB if you want text rendered correctly you'll need to hand that to Resvg).
 
@@ -237,7 +237,7 @@ The GIF I rendered of the transatlantic cable visualisation has a lot more going
 
 ![](<%= relative_url "/images/2024/10/map.gif" %>)A Gif version of the [telegraph cable visualisation](<%= url_for("_posts/2023-07-12-dataviz-connecting-the-atlantic.md") %>)
 
-Since these transitions use an interpolator I was able to render higher FPS videos by dropping D3 tweens in favour of just capturing renders inside a for loop –
+Since these transitions use an interpolator I was able to render higher FPS videos by dropping D3 tweens in favour of just capturing renders inside a for loop -
 
 ```javascript
 // Use this  ...

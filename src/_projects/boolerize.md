@@ -1,8 +1,9 @@
 ---
 title: Boolerize
-date: 2025-11-22
+date: 2025-03-22
 categories:
   - ruby-on-rails
+  - svelte-js
   - browser-extension
 featureImage: /images/projects/boolerize.png
 excerpt: Boolerize is a browser extension that helps recruiters find candidates.

@@ -1,6 +1,6 @@
 ---
 title: BitBarista
-date: 2017-05-01
+date: 2016-09-01
 categories:
   - cryptocurrency
   - design-research

@@ -20,7 +20,7 @@ Sometime soon I'd like to move house. If you've ever been in this position, the 
 
 All sales (where I live) in Scotland are recorded by the Registers of Scotland (RoS) and that data is published openly on the [government's stats portal](https://statistics.gov.scot/).
 
-Those figures are made available for various boundaries including what's called '2011 Intermediate Data Zones' – for a fairly high resolution choropleth map. Here below is the end result:
+Those figures are made available for various boundaries including what's called '2011 Intermediate Data Zones' - for a fairly high resolution choropleth map. Here below is the end result:
 
 <figure>
 <video src="<%= relative_url "/images/2024/05/output-na.mp4" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
