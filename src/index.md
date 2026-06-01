@@ -16,5 +16,3 @@ I help organisations take early ideas through to working software, and I help pe
 - [Projects](/rgianni-site/projects/) - past personal and work projects
 - [Posts](/rgianni-site/posts/) - finished writing
 - [Garden](/rgianni-site/garden/) - where I think aloud and collect things I find interesting
-
-<textarea class="marker"></textarea>

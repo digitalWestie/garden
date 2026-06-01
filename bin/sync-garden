@@ -241,6 +241,15 @@ if [[ "${DRY_RUN}" -eq 0 ]]; then
   folder_count=0
   root_count=0
 
+  if [[ -n "${GARDEN_URL_SEGMENT:-}" ]]; then
+    garden_url_segment="${GARDEN_URL_SEGMENT}"
+  else
+    garden_url_segment="$(basename "${DEST_DIR}")"
+  fi
+  # Root-relative hub links (not ./garden/...) so they work whether the garden URL has a trailing slash.
+  garden_hub_prefix="${SITE_BASE_PATH%/}/${garden_url_segment}"
+  garden_hub_prefix="/${garden_hub_prefix#/}"
+
   while IFS= read -r -d '' dir; do
     [[ -d "${dir}" ]] || continue
     if ! find "${dir}" -type f -name '*.md' ! -path "${dir}/index.md" -print -quit | grep -q .; then
@@ -248,7 +257,7 @@ if [[ "${DRY_RUN}" -eq 0 ]]; then
     fi
     name="$(basename "${dir}")"
     enc="${name// /%20}"
-    printf -- '- [%s](./garden/%s/)\n' "${name}" "${enc}" >> "${tmp_folders}"
+    printf -- '- [%s](%s/%s/)\n' "${name}" "${garden_hub_prefix}" "${enc}" >> "${tmp_folders}"
     folder_count=$((folder_count + 1))
   done < <(find "${DEST_DIR}" -mindepth 1 -maxdepth 1 -type d -print0 | sort -z)
 
@@ -257,7 +266,7 @@ if [[ "${DRY_RUN}" -eq 0 ]]; then
     display="${base_name//_/ }"
     display="${display//-/ }"
     enc="${base_name// /%20}"
-    printf -- '- [%s](./garden/%s/)\n' "${display}" "${enc}" >> "${tmp_root}"
+    printf -- '- [%s](%s/%s/)\n' "${display}" "${garden_hub_prefix}" "${enc}" >> "${tmp_root}"
     root_count=$((root_count + 1))
   done < <(find "${DEST_DIR}" -maxdepth 1 -type f -name '*.md' -print0 | sort -z)
 

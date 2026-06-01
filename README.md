@@ -24,7 +24,7 @@ bin/sync-garden
 bin/bridgetown start
 
 # build & deploy to production
-bin/bridgetown deploy
+bin/deploy
 
 # load the site up within a Ruby console (IRB)
 bin/bridgetown console
@@ -142,7 +142,7 @@ After syncing (non-dry-run), the command also:
 - adds minimal front matter to synced markdown files that do not already start with YAML (skips `**/index.md`): `layout: obsidian`, `title` (humanized from the `.md` basename), and **`filename`** (a **normalized** slug of that basename: lowercase, runs of non-alphanumeric characters become a single hyphen, e.g. `First question.md` → `first-question.md`). Files that already begin with `---` are left unchanged, so they will not gain `filename` until you add it yourself or strip front matter and re-sync.
 - **Breadcrumbs:** pages under `src/garden/` (and `src/garden.md`) show a trail above the content, e.g. `home / garden / Drafts / my-note.md`, with ` / ` between parts. Folder `index.md` pages end on the folder title (e.g. `Drafts`); notes end on `filename` from front matter, or the same normalized slug from the source basename if `filename` is missing.
 - writes `src/garden/<Folder>/index.md` for each top-level folder under `src/garden/`, listing **all** `.md` notes under that folder **recursively** (excluding only that folder’s `index.md`), with relative links like `./Sub/My%20Note/`
-- updates the `<!-- BEGIN:GARDEN_LINKS -->` block in `src/garden.md` with **folder** links (`./garden/<Folder>/`), plus an optional **Root notes** subsection for `.md` files sitting directly under `src/garden/`
+- updates the `<!-- BEGIN:GARDEN_LINKS -->` block in `src/garden.md` with **folder** links (`/<base_path>/garden/<Folder>/`, root-relative so they work from `/garden` and `/garden/`), plus an optional **Root notes** subsection for `.md` files sitting directly under `src/garden/`
 
 **Permalinks (Bridgetown):** the top-level `permalink` setting applies to **posts**. The **pages** collection (including `src/garden/`) defaults to directory-style URLs (`/:locale/:path/`). Using `collections pages: { permalink: "/:locale/:path.*" }` flattens many routes (e.g. `garden.html` instead of `garden/index.html`); this project keeps the default pages permalink and relies on base-path wikilinks instead. See [Permalinks | Bridgetown](https://www.bridgetownrb.com/docs/content/permalinks).
 

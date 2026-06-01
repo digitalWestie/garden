@@ -4,9 +4,11 @@
 # - Blank lines and comments are ignored
 
 # Include selected folders
+Lists/**
+Percolator/**
 # garden/**
-Drafts/**
-Thoughts/**
+# Drafts/**
+# Thoughts/**
 # Include selected root files
 # README.md
 

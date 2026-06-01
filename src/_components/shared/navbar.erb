@@ -5,6 +5,8 @@
     <li><a href="<%= relative_url '/projects' %>">Projects</a></li>
     <li><a href="<%= relative_url '/posts' %>">Posts</a></li>
     <li><a href="<%= relative_url '/garden' %>">Garden</a></li>
+    <% if show_theme_link? -%>
     <li><a href="<%= relative_url '/theme' %>">Theme</a></li>
+    <% end -%>
   </ul>
 </nav>
