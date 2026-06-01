@@ -4,8 +4,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-title: Your awesome title
-tagline: This site is totally awesome
+title: Rory Gianni
+tagline: Technology consultant, trainer, and full stack developer
 email: hello@rgianni.cc
 description: >-
-  Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  Edinburgh-based technology consultant helping organisations take early ideas to working software.
+  Projects, writing, and a digital garden covering open data, civic tech, creative coding, and training.
