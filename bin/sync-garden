@@ -15,8 +15,8 @@ if [[ -z "${SITE_BASE_PATH}" ]]; then
   SITE_BASE_PATH="$(
     ruby -e '
       s = File.read(File.join(ARGV[0], "config/initializers.rb"))
-      m = s.match(/base_path\s+"([^"]+)"/)
-      print(m ? m[1] : "/rgianni-site")
+      m = s.match(/base_path\s+"([^"]*)"/)
+      print(m ? m[1] : "")
     ' "${PROJECT_ROOT}"
   )"
 fi

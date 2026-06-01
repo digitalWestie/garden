@@ -39,7 +39,7 @@ const esbuildOptions = {
   globOptions: {
     excludeFilter: /\.(dsd|lit)\.css$/
   },
-  publicPath: "/rgianni-site/_bridgetown/static"
+  publicPath: "/_bridgetown/static"
 }
 
 build(esbuildOptions)

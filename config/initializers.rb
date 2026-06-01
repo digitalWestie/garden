@@ -16,10 +16,7 @@
 
 Bridgetown.configure do |config|
   # The base hostname & protocol for your site, e.g. https://example.com
-  url "https://digitalwestie.github.io"
-  
-  # Base path for GitHub Pages (repository name)
-  base_path "/rgianni-site"
+  url "https://rgianni.com"
 
   # Permalink: top-level `permalink "…"` applies to **posts** (default: pretty). The **pages**
   # collection uses `/:locale/:path/` (see bridgetown-core Collection#default_configured_permalink).

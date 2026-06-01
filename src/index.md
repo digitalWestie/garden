@@ -13,6 +13,6 @@ I help organisations take early ideas through to working software, and I help pe
 
 <span class="marker">*</span> Here you can find:
 
-- [Projects](/rgianni-site/projects/) - past personal and work projects
-- [Posts](/rgianni-site/posts/) - finished writing
-- [Garden](/rgianni-site/garden/) - where I think aloud and collect things I find interesting
+- [Projects](/projects/) - past personal and work projects
+- [Posts](/posts/) - finished writing
+- [Garden](/garden/) - where I think aloud and collect things I find interesting

@@ -4,4 +4,4 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 bundle exec rake deploy
-rsync -avz --delete output/ digitalwestie@178.105.232.15:/var/www/html/
+rsync -avz --delete output/ digitalwestie@178.105.232.15:/var/www/rgianni/

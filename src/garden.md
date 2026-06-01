@@ -10,6 +10,6 @@ This section contains selected works synced from my Obsidian vault. It's called 
 Browse by folder:
 
 <!-- BEGIN:GARDEN_LINKS -->
-- [Lists](/rgianni-site/garden/Lists/)
-- [Percolator](/rgianni-site/garden/Percolator/)
+- [Lists](/garden/Lists/)
+- [Percolator](/garden/Percolator/)
 <!-- END:GARDEN_LINKS -->

@@ -7,7 +7,7 @@
 #
 # Wikilink targets use site base_path + /{basename(GARDEN_DIR)}/... (URL-encoded) so links work
 # from any page depth. Matches Bridgetown output under src/<name>/.
-# Override base path: ENV["GARDEN_SITE_BASE_PATH"] or second CLI arg (default: /rgianni-site).
+# Override base path: ENV["GARDEN_SITE_BASE_PATH"] or second CLI arg (default: parse config or "").
 # Page URL suffix: ENV["GARDEN_PAGE_URL_SUFFIX"] (default "/" for directory-style pretty URLs).
 # URL segment after base_path: basename of GARDEN_DIR, or ENV["GARDEN_URL_SEGMENT"].
 #
@@ -32,7 +32,7 @@ base_path =
   elsif ARGV[1] && !ARGV[1].strip.empty?
     ARGV[1].strip
   else
-    "/rgianni-site"
+    ""
   end
 
 page_suffix = ENV.fetch("GARDEN_PAGE_URL_SUFFIX", "/")
