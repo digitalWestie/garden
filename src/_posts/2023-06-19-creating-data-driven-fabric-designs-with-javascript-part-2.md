@@ -17,8 +17,9 @@ For some context about the project I've [written a post](<%= url_for("_posts/202
 
 As the title indicates, this is part 2, if you'd like to know more about how the images were gathered and prepared from the watercolour archive with NodeJS,  [check-out part 1](<%= url_for("_posts/2023-06-01-creating-data-driven-fabric-designs-with-javascript-p1-scraping-and-data-preparation-with-nodejs.md") %>).
 
-Here's the screencast, and here's a link to the [starter code on Glitch](https://glitch.com/edit/#!/creating-with-data?path=shirt-designer%2Fstart.html%3A5%3A62).
+Here's the screencast, and here's ~~a link to the starter code on Glitch~~.
 
+__2026-06-01 Edit:__ Unfortunately, example code is no longer available due to Glitch shutting down._
 
 <!-- GHOST_RECOVERED_EMBEDS -->
 <figure class="kg-card kg-embed-card"><iframe width="575" height="325" src="https://www.youtube.com/embed/_3ItNiEzNFw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Creating data-driven fabric designs // Part 2: Generative shirt design with d3js"></iframe></figure>

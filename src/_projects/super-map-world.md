@@ -2,6 +2,7 @@
 title: Super Map World
 date: 2024-02-21
 categories:
+  - personal
   - hotwire
   - ruby-on-rails
   - d3-js

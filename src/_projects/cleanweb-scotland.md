@@ -3,6 +3,7 @@ title: Cleanweb Scotland
 date: 2013-03-14
 date_range: 2013-2017
 categories:
+  - personal
   - environment
   - events
   - community

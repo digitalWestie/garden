@@ -14,7 +14,7 @@ In this follow-up video, we add another method of filtering data on our doctors'
 
 If you're not too familiar with Leaflet or JavaScript in general, I recommend watching [the first Leaflet.js video](<%= url_for("_posts/2023-07-11-mapping-and-filtering-data-with-leaflet-js.md") %>) where we create our visualisation from scratch.
 
-You can find the [complete map visualisation here](https://creating-with-data.glitch.me/leaflet-filtering/searching.html) and [code for the start and end point on Glitch](https://glitch.com/edit/#!/creating-with-data/leaflet-filtering/).
+~~You can find the [complete map visualisation here](https://creating-with-data.glitch.me/leaflet-filtering/searching.html) and [code for the start and end point on Glitch](https://glitch.com/edit/#!/creating-with-data/leaflet-filtering/).~~ (No longer available due to Glitch shutting down, sorry)
 
 
 <!-- GHOST_RECOVERED_EMBEDS -->

@@ -10,7 +10,7 @@ layout: post
 categories: creating-with-data
 ---
 
-_The first of two parts, this video covers the data-gathering/prep side in [creating this map of the UK's oldest trademarks](https://creating-with-data.glitch.me/trademarks/index.html)._
+__2026-06-01:__ _Unfortunately, the visualisation is no longer available due to Glitch shutting down._
 
 How do you interrogate a 1M+ row CSV with (almost) all the trademarks filed for registration in the UK?
 

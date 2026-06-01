@@ -20,7 +20,7 @@ This shirt was designed by code.
 
 More accurately, the fabric pattern was composed with the help of a generative design tool. It randomly selected and arranged images from the US Dept. of Agriculture's Pomological Watercolour collection to visualise hundreds (if not thousands and thousands) of different shirt designs.
 
-In my upcoming screencasts I'll re-create the steps to create [this generative design tool](https://creating-with-data.glitch.me/shirt-designer). For the moment, I'll explain the what and the why.
+In my upcoming screencasts I'll re-create the steps to create this generative design tool. For the moment, I'll explain the what and the why.
 
 Indeed, why?
 
@@ -38,9 +38,11 @@ A Twitter bot by [Parker Higgins](https://twitter.com/xor) called ' [old fruit p
 
 As soon as I discovered the archive I began by writing a scraper for the data in NodeJS using the very handy [Cheerio HTML parsing library](https://cheerio.js.org/). Helpfully, all the image names in the archive carry the same ID as you'd use to address their entries on the web.
 
-The first version of the shirt visualiser was a scrappy combination of CSS, jQuery and a CC0 image of a shirt I found somewhere on the web. The 'Botanical wear generator' began with a 'Refresh' button that would randomise the images and arrangement of each pattern. Over time I added controls to shift patterns, vary sizing, and filter down to favourite images. It's [over here if you'd like to try it](https://generative-shirts.glitch.me/).
+The first version of the shirt visualiser was a scrappy combination of CSS, jQuery and a CC0 image of a shirt I found somewhere on the web. The 'Botanical wear generator' began with a 'Refresh' button that would randomise the images and arrangement of each pattern. Over time I added controls to shift patterns, vary sizing, and filter down to favourite images.
 
 <video src="<%= relative_url "/images/2023/05/Peek-2021-02-13-23-41.webm" %>" style="width: 100%; height: auto;" preload="metadata" playsinline controls></video>
+
+__2026-06-01 Edit:__ Unfortunately, the tool is no longer available due to Glitch shutting down._
 
 By hitting that refresh button lots (and lots) of times I discovered:
 

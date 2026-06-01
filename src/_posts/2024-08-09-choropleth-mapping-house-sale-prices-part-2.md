@@ -12,7 +12,9 @@ categories: creating-with-data
 
 In [Part 1](<%= url_for("_posts/2024-05-03-choropleth-mapping-house-sale-prices-part-1.md") %>), I focused on readying the data for the visualisation. As far as the actual visualisation starter was concerned we got to the point of setting up the SVG with the boundaries projected. Now, we need to pick up our crayons and do some colouring in!
 
-Before proceeding, take a quick look at the code for the full visualisation. You can [view/remix the final code over on glitch](https://glitch.com/edit/#!/creating-with-data?path=scothousing%2Findex.html). Also, if you haven't seen it already, go checkout [the visualisation here](https://creating-with-data.glitch.me/scothousing/).
+Before proceeding, take a quick look at the code for the full visualisation. You can ~~[view/remix the final code over on glitch](https://glitch.com/edit/#!/creating-with-data?path=scothousing%2Findex.html).~~ (No longer available due to Glitch shutting down, sorry)
+
+~~Also, if you haven't seen it already, go checkout [the visualisation here](https://creating-with-data.glitch.me/scothousing/).~~
 
 In this post I won't go through each line but rather refer to the key steps that bring the visualisation together.
 

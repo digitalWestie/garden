@@ -7,7 +7,7 @@ bodyClass: "wide-layout"
 # Posts
 
 <div class="content-card-grid" role="list">
-  <% collections.posts.each do |post| %>
+  <% collections.posts.select(&:published?).each do |post| %>
     <% image_path = post.data.featureImage %>
     <% image_url = image_path.present? ? relative_url(image_path) : nil %>
     <% categories = post.data.categories %>

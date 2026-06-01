@@ -10,11 +10,11 @@ layout: post
 categories: creating-with-data
 ---
 
-Maps are some of the most shared and sought after forms of visualisation. In this  video, I walk through [an example](https://creating-with-data.glitch.me/choropleth.html) that visualises unemployment data at the US county level. The code was updated from this [bl.ocks.org v4 example](https://bl.ocks.org/mbostock/4060606) to use d3.js version 7.  The walkthrough touches on using [d3-fetch](https://bl.ocks.org/mbostock/4060606) to retrieve data on the web, as well as some basics of rendering geographic data.
+Maps are some of the most shared and sought after forms of visualisation. In this  video, I walk through an example that visualises unemployment data at the US county level. The code was updated from this [bl.ocks.org v4 example](https://bl.ocks.org/mbostock/4060606) to use d3.js version 7.  The walkthrough touches on using [d3-fetch](https://bl.ocks.org/mbostock/4060606) to retrieve data on the web, as well as some basics of rendering geographic data.
 
 Notes:
 
-- [Choropleth map code](https://glitch.com/edit/#!/creating-with-data?path=choropleth.html%3A1%3A0) on Glitch
+- ~~[Choropleth map code](https://glitch.com/edit/#!/creating-with-data?path=choropleth.html%3A1%3A0) on Glitch~~ (No longer available due to Glitch shutting down, sorry)
 - ['Map' object documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) on MDN
 - [Topojson repo](https://github.com/topojson/topojson) on GitHub
 - ['Introducing asynchronous JavaScript'](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing) article on MDN

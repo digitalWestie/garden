@@ -18,7 +18,7 @@ Contents:
 - A taste of capabilities- what can the library do?
 - Core concepts (selections & data bindings)
 - Examples of d3.js in action
-- ['Tech Companies in Edinburgh' data visualisation](<%= url_for("_posts/2023-04-07-dataviz-tech-companies-in-edinburgh.md") %>)
+- 'Tech Companies in Edinburgh' data visualisation
 - Q&A from audience
 
 

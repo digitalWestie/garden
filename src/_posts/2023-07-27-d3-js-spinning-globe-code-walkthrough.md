@@ -10,12 +10,14 @@ layout: post
 categories: creating-with-data
 ---
 
-In this walkthrough, we look at the code behind this [spinning globe graphic](https://creating-with-data.glitch.me/periwinkle-planet/index.html) rendered to web canvas using D3.js.
+In this walkthrough, we look at the code behind this spinning globe graphic rendered to web canvas using D3.js.
+
+__2026-06-01 Edit:__ Unfortunately, the visualisation is no longer available due to Glitch shutting down._
 
 Links:
 
-- [Spinning globe graphic](https://creating-with-data.glitch.me/periwinkle-planet/index.html)
-- [Code on Glitch](https://glitch.com/edit/#!/creating-with-data?path=periwinkle-planet%2Findex.html%3A1%3A0)
+- ~~[Spinning globe graphic](https://creating-with-data.glitch.me/periwinkle-planet/index.html)~~
+- ~~[Code on Glitch](https://glitch.com/edit/#!/creating-with-data?path=periwinkle-planet%2Findex.html%3A1%3A0)~~
 - [d3-geo documentation](https://d3js.org/d3-geo)
 
 

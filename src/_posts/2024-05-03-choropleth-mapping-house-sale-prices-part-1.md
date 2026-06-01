@@ -10,9 +10,9 @@ layout: post
 categories: creating-with-data
 ---
 
-🗺️ _If you're looking [for the dataviz, here it is](https://creating-with-data.glitch.me/scothousing/)._
+🗺️ ~~_If you're looking [for the dataviz, here it is](https://creating-with-data.glitch.me/scothousing/)._~~ (No longer available due to Glitch shutting down, sorry)
 
-Looking at the stats, the ' [Choropleth code walkthrough](<%= url_for("_posts/2023-07-03-choropleth-map.md") %>)' has been the most popular post/video by far. On that note, I thought I'd do another Choropleth map. This time I've sprinkled in interactivity to demonstrate d3's 'update' behaviour. In this post, I'll outline the rationale for the visualisation and how to prepare the data for it.
+Looking at the stats, the '[Choropleth code walkthrough](<%= url_for("_posts/2023-07-03-choropleth-map.md") %>)' has been the most popular post/video by far. On that note, I thought I'd do another Choropleth map. This time I've sprinkled in interactivity to demonstrate d3's 'update' behaviour. In this post, I'll outline the rationale for the visualisation and how to prepare the data for it.
 
 ### The Visualisation
 

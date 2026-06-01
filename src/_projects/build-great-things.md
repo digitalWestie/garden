@@ -3,6 +3,7 @@ title: Build Great Things
 date: 2012-05-01
 date_range: 2012-2014
 categories:
+  - personal
   - ruby-on-rails
   - events
   - training

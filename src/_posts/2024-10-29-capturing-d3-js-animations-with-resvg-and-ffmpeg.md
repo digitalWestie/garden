@@ -73,7 +73,7 @@ What we want to do is a little different: capture a PNG every time something cha
 
 ![](<%= relative_url "/images/2024/10/image.png" %>)
 
-This example animates a simple SVG circle and captures each frame. Here's the code for [this example (available on Glitch)](https://creating-with-data.glitch.me/connecting-atlantic-ani/simple.html):
+This example animates a simple SVG circle and captures each frame. Here's the code for ~~ [this example (available on Glitch)](https://creating-with-data.glitch.me/connecting-atlantic-ani/simple.html) ~~ (No longer available due to Glitch shutting down, sorry):
 
 ```html
 <!DOCTYPE html>

@@ -1,5 +1,5 @@
 ---
-title: 'Dataviz: The UK''s Oldest Trademarks'
+title: "Dataviz: The UK's Oldest Trademarks"
 slug: dataviz-the-uks-oldest-trademarks
 createdAt: 2023-04-13 12:42:00.000000000 Z
 updatedAt: 2023-04-13 16:28:03.000000000 Z
@@ -10,7 +10,9 @@ layout: post
 categories: creating-with-data
 ---
 
-[A map showing the oldest trademark](https://creating-with-data.glitch.me/trademarks/) for each [postcode area](https://en.wikipedia.org/wiki/List_of_postcode_areas_in_the_United_Kingdom) in the UK . This data comes from the IPO which maintains a register of all the trademarks since the system started back in 1876.
+__2026-06-01:__ _Unfortunately, the visualisation is no longer available due to Glitch shutting down._
+
+A map showing the oldest trademark for each [postcode area](https://en.wikipedia.org/wiki/List_of_postcode_areas_in_the_United_Kingdom) in the UK . This data comes from the IPO which maintains a register of all the trademarks since the system started back in 1876.
 
 I'm currently in the process of recording two screen-casts on creating this data-viz. If you'd like to follow along and see how to re-create this (or a similar) map thne check back for links which I'll post here. In the meantime, here's a little overview of the steps I took in creating the map.
 

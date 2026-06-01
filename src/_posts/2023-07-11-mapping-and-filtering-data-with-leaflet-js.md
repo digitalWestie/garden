@@ -18,7 +18,7 @@ This video is on the long side. If you're more interested in the visualisation t
 
 **Notes**
 
-You can find the [starter template](https://creating-with-data.glitch.me/leaflet-filtering/start.html) and [the finished article on Glitch](https://creating-with-data.glitch.me/leaflet-filtering/complete.html).
+~~You can find the [starter template](https://creating-with-data.glitch.me/leaflet-filtering/start.html) and [the finished article on Glitch](https://creating-with-data.glitch.me/leaflet-filtering/complete.html).~~ (No longer available due to Glitch shutting down, sorry)
 
 Edit: Make sure to [check out the follow-up video](<%= url_for("_posts/2023-07-20-leaflet-js-filtering-text.md") %>)!
 
