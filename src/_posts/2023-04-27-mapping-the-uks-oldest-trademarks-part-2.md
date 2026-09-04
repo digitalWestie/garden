@@ -19,8 +19,7 @@ We begin with a starter template, and work towards a full visualisation. The map
 ![](<%= relative_url "/images/2023/04/both.png" %>)
 __2026-06-01:__ _Unfortunately, the visualisation is no longer available due to Glitch shutting down._
 
-
-You can find the code for [both steps, plus the final visualisation on Glitch](https://glitch.com/edit/#!/creating-with-data?path=trademarks%2Fstarter.html%3A33%3A7)!
+~~You can find the code for [both steps, plus the final visualisation on Glitch](https://glitch.com/edit/#!/creating-with-data?path=trademarks%2Fstarter.html%3A33%3A7)!~~
 
 
 <!-- GHOST_RECOVERED_EMBEDS -->

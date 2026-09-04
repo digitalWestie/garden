@@ -187,7 +187,7 @@ h3 {
   font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
-a {
+a, .link {
   color: var(--action-color);
   text-decoration: underline;
   text-decoration-color: color-mix(in srgb, var(--accent-gold) 55%, transparent);
@@ -201,7 +201,19 @@ a:focus-visible {
   text-decoration-color: var(--accent-gold);
 }
 
-button,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  appearance: none;
+  cursor: pointer;
+}
+
 input,
 select,
 textarea {
@@ -246,6 +258,37 @@ body > nav a {
   text-decoration-thickness: 1px;
 }
 
+
+main {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+main > article {
+  padding: 2rem 2rem;
+  background-color: var(--canvas);
+  border: var(--frame-border);
+  min-height: calc(100vh - 220px);
+  max-width: clamp(22rem, 90vw, 52rem);
+}
+
+main aside {
+  /** would maybe be shown at top on mobile */
+  flex: 1;
+  position: sticky;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: calc(100vh - 2rem);
+  padding-bottom: 0.25rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .font-semplicita {
   font-family: "Semplicita", serif;
 }
@@ -279,12 +322,144 @@ body > nav a {
   color: color-mix(in srgb, var(--ink) 45%, var(--canvas));
 }
 
-main > article {
-  padding: 2rem 2rem;
-  background-color: var(--canvas);
-  border: var(--frame-border);
-  min-height: calc(100vh - 220px);
-  max-width: clamp(22rem, 90vw, 52rem);
+/* Retro desktop windows in the aside */
+.desk-window-shell {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 280ms ease;
+}
+
+.desk-window-shell.is-visible {
+  opacity: 1;
+}
+
+.desk-window-shell.is-inactive {
+  display: none;
+}
+
+.desk-window {
+  margin: 0;
+  background: color-mix(in srgb, var(--canvas) 92%, #fff);
+  border: 1px solid var(--border-line);
+  box-shadow: 5px 5px 0 color-mix(in srgb, var(--border-line) 35%, transparent);
+}
+
+.desk-window-chrome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.35rem 0.4rem 0.35rem 0.55rem;
+  background: #564412;
+  border-bottom: 1px solid var(--border-line);
+  font-family: "IBM Plex Mono", "Cascadia Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.desk-window-chrome::-webkit-details-marker {
+  display: none;
+}
+
+.desk-window-chrome::marker {
+  content: "";
+}
+
+.desk-window-title {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.desk-window-controls {
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.2rem;
+}
+
+.desk-window-btn {
+  display: inline-grid;
+  place-items: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  padding: 0;
+  border: 1px solid var(--border-line);
+  background: var(--canvas);
+  box-shadow:
+    inset 1px 1px 0 color-mix(in srgb, #fff 70%, transparent),
+    inset -1px -1px 0 color-mix(in srgb, var(--ink) 15%, transparent);
+  color: var(--ink);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.desk-window-toggle {
+  pointer-events: none;
+}
+
+.desk-window-toggle::before {
+  content: "−";
+}
+
+.desk-window:not([open]) .desk-window-toggle::before {
+  content: "+";
+}
+
+.desk-window-btn:hover,
+.desk-window-btn:focus-visible {
+  background: color-mix(in srgb, var(--accent-gold) 35%, var(--canvas));
+}
+
+.desk-window-btn:active {
+  box-shadow: inset 1px 1px 0 color-mix(in srgb, var(--ink) 18%, transparent);
+}
+
+.desk-window-body {
+  padding: 0.75rem 0.85rem 0.9rem;
+  font-size: 0.92rem;
+}
+
+.desk-window-body > *:first-child {
+  margin-top: 0;
+}
+
+.desk-window-body > *:last-child {
+  margin-bottom: 0;
+}
+
+.desk-window-body img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border-line);
+  margin-bottom: 0.65rem;
+}
+
+.desk-window:not([open]) .desk-window-chrome {
+  border-bottom: 0;
+}
+
+.desk-open {
+  display: inline;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent-gold) 55%, transparent);
+  text-underline-offset: 0.2em;
+}
+
+.desk-open:hover,
+.desk-open:focus-visible {
+  color: var(--accent-gold);
+  text-decoration-color: var(--accent-gold);
 }
 
 .wide-layout main > article {

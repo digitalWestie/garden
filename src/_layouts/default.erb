@@ -20,6 +20,10 @@
           <%= yield %>
         </div>
       </article>
+
+      <aside>
+        <%= slotted :aside %>
+      </aside>
     </main>
 
     <%= render "footer", metadata: site.metadata %>

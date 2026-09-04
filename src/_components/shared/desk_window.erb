@@ -1,0 +1,32 @@
+<div
+  class="desk-window-shell<%= " is-inactive" unless active_at_init? %><%= " is-visible" if active_at_init? %>"
+  data-desk-window
+  <% if @id.present? %>data-desk-id="<%= @id %>"<% end %>
+  data-init="<%= @init %>"
+  data-activate-as="<%= @activate_as %>"
+  data-threshold="<%= @threshold %>"
+  <% if @activate_at.present? %>data-activate-at="<%= @activate_at %>"<% end %>
+  <% if @deactivate_at.present? %>data-deactivate-at="<%= @deactivate_at %>"<% end %>
+  <% if @collapse_before.present? %>data-collapse-before="<%= @collapse_before %>"<% end %>
+  <% if @collapse_after.present? %>data-collapse-after="<%= @collapse_after %>"<% end %>
+  <% if @persist %>data-persist<% end %>
+  <% if scroll_controlled? %>data-scroll-controlled<% end %>
+>
+  <details
+    class="desk-window<%= " #{@class_name}" if @class_name.present? %>"
+    <% if @style.present? %>style="<%= @style %>"<% end %>
+    <%= "open" if open_at_init? %>
+    <%= "hidden" unless active_at_init? %>
+  >
+    <summary class="desk-window-chrome">
+      <span class="desk-window-title"><%= @title %></span>
+      <span class="desk-window-controls">
+        <span class="desk-window-btn desk-window-toggle" aria-hidden="true"></span>
+        <button type="button" class="desk-window-btn desk-window-close" aria-label="Close <%= @title %>">×</button>
+      </span>
+    </summary>
+    <div class="desk-window-body">
+      <%= content %>
+    </div>
+  </details>
+</div>
