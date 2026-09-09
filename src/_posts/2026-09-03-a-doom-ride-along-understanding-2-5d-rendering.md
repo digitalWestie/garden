@@ -25,15 +25,33 @@ published: true
   <% end %>
 <% end %>
 
+<% slot :aside, transform: false do %>
+  <%= render Shared::DeskWindow.new(
+    id: "tsoding",
+    title: "Demystifying 3D Graphics...",
+    init: :inactive,
+    activate_at: "#demistifying3d",
+    activate_as: :expanded,
+    collapse_before: "#demistifying3d",
+    style: "max-width: 400px;",
+    persist: true
+  ) do %>
+    <img src="<%= relative_url "/images/2026/demistifying3d.png" %>" alt="Tsoding's 3D Graphics video" />
+    <p>Btw, you can get a 10x better explanation of 3D perspective projection by watching Tsoding's <a href="https://www.youtube.com/watch?v=qjWkNZ0SXfo">Demystifying 3D Graphics video</a>.</p>
+  <% end %>
+<% end %>
+
 <a href="https://fabiensanglard.net/gebbdoom/" target="_blank">
   <img src="<%= relative_url "/images/2026/doombook.webp" %>" alt="Game Engine Black Book: DOOM" style="display:inline-block; min-width: 100px; max-width: 250px; width: 50%; float: right; margin-left: 0.5rem; margin-bottom: 0.5rem;" />
 </a>
 
 I've been reading [Fabien Sanglard's fabulous Game Engine Black Book: DOOM](https://fabiensanglard.net/gebbdoom/). What makes it such a joy is that it isn't only engine internals — mixed in is computer history, hardware, and the odd wacky anecdote.
 
-To really follow it, I felt like I needed to write some code to grasp some of the concepts. Chief among them is the rendering engine. The geometry doesn't come from free-form meshes but rather a 2D map that's projected onto a 3D space, hence the term '2.5D'. The book doesn't go into rendering end-to-end but there are tonnes of other companion resources to choose from. In my case, I followed this [fabulous tutorial by 3DSage](https://www.youtube.com/watch?v=huMO4VQEwPc). Written here is my attempt to explain to myself how it all works.
+To really follow it, I felt like I needed to write some code to grasp some of the concepts. Chief among them is the rendering engine. The geometry doesn't come from free-form meshes but rather a 2D map that's projected onto a 3D space, hence the term '2.5D'. The book doesn't go into rendering end-to-end but there are tonnes of other companion resources to choose from. In my case, I followed this [fabulous tutorial by 3DSage](https://www.youtube.com/watch?v=huMO4VQEwPc).
 
-Oh, and if you've glanced through this post already, you'll have noticed the snippets are written in Ruby. Yes, that looks an unnatural choice for someone writing anything graphics related, and I can explain!
+Written here is my attempt to explain to myself how it all works.
+
+If you've glanced through this post already, you'll have noticed the snippets are written in Ruby. Yes, that looks an unnatural choice for someone writing anything graphics related, and I can explain!
 
 Ruby can now be compiled to native executables. This is thanks to [Spinel](https://github.com/matz/spinel), the latest project from Ruby creator, Matz. Spinel parses Ruby, emits C, and then compiles the C to a native executable. The neat thing about Spinel is that you can use native libraries like SDL for graphics. I've been wanting to try Spinel for a while now, and it's been delightful. There are a few quirks and features of Ruby that are not available, but overall I'm surprised how well it just works.
 
@@ -246,7 +264,8 @@ The `HALF_SW` and `HALF_SH` values are half width and half height of the screen.
 
 The main thing that we are doing here is dividing X and Z values by depth. Points farther away are scaled down relative to depth, so they appear smaller and converge on the centre of the screen. This provides the perspective effect of far things looking smaller than close things.
 
-The divide by depth step is how we translate from player-relative space into screen space! Here's how it looks:
+<span id="demistifying3d"></span>
+The divide by depth step is how we translate from player-relative space into screen space!  Here's how it looks:
 
 ![](<%= relative_url "/images/2026/one-line.png" %>)
 
