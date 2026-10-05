@@ -6,7 +6,7 @@ categories:
   - data-visualisation
   - civic-tech
 featureImage: /images/projects/visbrowser.png
-excerpt: A crowd-sourced directory of data visualisation tools—filter by platform, skills, data type, and chart style.
+excerpt: A crowd-sourced directory of data visualisation tools-filter by platform, skills, data type, and chart style.
 projectUrl: https://vistools.net/
 ---
 

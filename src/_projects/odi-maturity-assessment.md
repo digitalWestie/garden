@@ -10,4 +10,4 @@ excerpt: Interactive assessments against the Open Data Institute’s maturity mo
 projectUrl: https://maturity.theodi.org/
 ---
 
-Worked on the [ODI Maturity Assessment Tool](https://theodi.org/insights/tools/maturity-assessment-tool/) for the Open Data Institute—a structured way for organisations to benchmark open data, data ethics, and broader data practices and receive tailored reports from their responses.
+Worked on the [ODI Maturity Assessment Tool](https://theodi.org/insights/tools/maturity-assessment-tool/) for the Open Data Institute-a structured way for organisations to benchmark open data, data ethics, and broader data practices and receive tailored reports from their responses.

@@ -11,7 +11,7 @@ excerpt: Open data training for Irish public sector bodies with UrbanTide, commi
 projectUrl: https://urbantide.com/output/opendata
 ---
 
-Delivered and supported [open data training](https://urbantide.com/output/opendata) for Irish public bodies with UrbanTide, under the [DPER training framework](https://data.gov.ie/pages/trainingsupportforpublicbodies) for Ireland’s Open Data Initiative—from classroom sessions through to online delivery after 2020, with courses continuing into 2025.
+Delivered and supported [open data training](https://urbantide.com/output/opendata) for Irish public bodies with UrbanTide, under the [DPER training framework](https://data.gov.ie/pages/trainingsupportforpublicbodies) for Ireland’s Open Data Initiative-from classroom sessions through to online delivery after 2020, with courses continuing into 2025.
 
 Courses delivered individually or as part of the trainer team:
 

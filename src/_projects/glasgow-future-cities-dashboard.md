@@ -6,7 +6,7 @@ categories:
   - open-data
   - data-visualisation
 featureImage: /images/projects/glasgow-dashboard.jpg
-excerpt: Front-end for OPEN Glasgow’s city dashboard—live data from the Future Cities demonstrator.
+excerpt: Front-end for OPEN Glasgow’s city dashboard-live data from the Future Cities demonstrator.
 projectUrl: https://www.open.glasgow.gov.uk
 ---
 

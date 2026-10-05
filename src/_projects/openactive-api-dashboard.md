@@ -6,8 +6,12 @@ categories:
   - APIs
   - ruby
 featureImage: /images/projects/openactive.png
-excerpt: Worked on Ruby libraries to support the development of the OpenActive API Dashboard. This dashboard lists all of the datasets and APIs published as part of the OpenActive initiative.
+excerpt: Supported the ODI’s OpenActive API dashboard - Ruby tooling for datasets and APIs published under the open opportunity data standard.
 projectUrl: https://openactive.io/
 ---
 
-Ruby tooling backed a dashboard surfacing datasets and APIs published under the OpenActive standard for open opportunity data.
+Supported the Open Data Institute (ODI) development team building an API dashboard for the [OpenActive](https://openactive.io/) data standard - open opportunity data for physical activity.
+
+Work included Ruby tooling and support for a dashboard listing datasets and APIs published as part of the OpenActive initiative.
+
+Technologies: Ruby, Sinatra, Docker.

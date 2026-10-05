@@ -10,4 +10,8 @@ featureImage: /images/projects/consul.png
 projectUrl: https://consuldemocracy.org/
 ---
 
-Building an integration between [CONSUL DEMOCRACY](https://consuldemocracy.org) and [Jigsaw’s Sensemaking tools](https://jigsaw-code.github.io/sensemaking-tools/). Consul is a democracy platform for local authorities to run consultations and participatory budgeting initiatives. To support the consul platform, I worked on an integration with Sensemaking's AI-assisted analysis features, so civic processes can move from collecting contributions to understanding them at scale.
+Ongoing work integrating [CONSUL DEMOCRACY](https://consuldemocracy.org/) with [Jigsaw’s Sensemaking tools](https://jigsaw-code.github.io/sensemaking-tools/).
+
+Consul is open-source software used by cities and organisations worldwide for citizen participation - debates, proposals, voting, participatory budgeting, and collaborative drafting. Sensemaking AI helps turn large volumes of public input into themes, summaries, and actionable insight.
+
+The focus of this integration is connecting Consul participation data to AI-assisted analysis so civic processes can move from **collecting contributions** to **understanding them at scale** (themes, reporting). Built in the Ruby on Rails / API integration space around the Consul platform.

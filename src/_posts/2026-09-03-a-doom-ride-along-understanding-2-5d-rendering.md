@@ -45,7 +45,7 @@ published: true
   <img src="<%= relative_url "/images/2026/doombook.webp" %>" alt="Game Engine Black Book: DOOM" style="display:inline-block; min-width: 100px; max-width: 250px; width: 50%; float: right; margin-left: 0.5rem; margin-bottom: 0.5rem;" />
 </a>
 
-I've been reading [Fabien Sanglard's fabulous Game Engine Black Book: DOOM](https://fabiensanglard.net/gebbdoom/). What makes it such a joy is that it isn't only engine internals — mixed in is computer history, hardware, and the odd wacky anecdote.
+I've been reading [Fabien Sanglard's fabulous Game Engine Black Book: DOOM](https://fabiensanglard.net/gebbdoom/). What makes it such a joy is that it isn't only engine internals - mixed in is computer history, hardware, and the odd wacky anecdote.
 
 To really follow it, I felt like I needed to write some code to grasp some of the concepts. Chief among them is the rendering engine. The geometry doesn't come from free-form meshes but rather a 2D map that's projected onto a 3D space, hence the term '2.5D'. The book doesn't go into rendering end-to-end but there are tonnes of other companion resources to choose from. In my case, I followed this [fabulous tutorial by 3DSage](https://www.youtube.com/watch?v=huMO4VQEwPc).
 

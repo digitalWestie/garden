@@ -6,7 +6,7 @@ categories:
   - chatbot
   - ethnography
 featureImage: /images/projects/ethnobot.png
-excerpt: A chatbot for gathering ethnographic field data in situ—studied at the Royal Highland Show for CHI 2018.
+excerpt: A chatbot for gathering ethnographic field data in situ-studied at the Royal Highland Show for CHI 2018.
 projectUrl: https://dl.acm.org/doi/10.1145/3173574.3174178
 ---
 

@@ -734,6 +734,24 @@ hr {
   text-decoration-thickness: 1px;
 }
 
+.content-card-title button {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.12em;
+}
+
+.content-card-title button:hover,
+.content-card-image-link:hover {
+  color: var(--accent-gold);
+  text-decoration-color: var(--accent-gold);
+}
+
+button.content-card-image-link {
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
+
 .content-card-date,
 .content-card-categories {
   margin: 0;
@@ -752,8 +770,82 @@ hr {
 }
 
 .content-card:hover,
-.content-card:has(a:focus-visible) {
+.content-card:has(a:focus-visible),
+.content-card:has(button:focus-visible) {
   box-shadow: 5px 5px 0 color-mix(in srgb, var(--accent-gold) 50%, transparent);
+}
+
+.project-dialog {
+  width: min(42rem, calc(100vw - 2rem));
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 2rem);
+  margin: auto;
+  padding: 0;
+  border: var(--frame-border);
+  background: color-mix(in srgb, var(--canvas) 96%, #fff);
+  color: var(--ink);
+  overflow: auto;
+}
+
+.project-dialog::backdrop {
+  background: color-mix(in srgb, var(--ink) 55%, transparent);
+}
+
+.project-dialog-panel {
+  position: relative;
+  display: grid;
+  gap: 0.65rem;
+  padding: 1.25rem 1.25rem 1.5rem;
+}
+
+.project-dialog-close-form {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  margin: 0;
+}
+
+.project-dialog-close {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: var(--frame-border);
+  background: color-mix(in srgb, var(--canvas) 90%, #fff);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.project-dialog-close:hover,
+.project-dialog-close:focus-visible {
+  color: var(--accent-gold);
+}
+
+.project-dialog-title {
+  margin: 0;
+  padding-right: 2.5rem;
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+}
+
+.project-dialog-body {
+  margin-top: 0.35rem;
+}
+
+.project-dialog-body > *:first-child {
+  margin-top: 0;
+}
+
+.project-dialog-body > *:last-child {
+  margin-bottom: 0;
+}
+
+.project-dialog-visit {
+  margin: 0.75rem 0 0;
+}
+
+.project-dialog-visit a {
+  font-weight: 600;
+  text-decoration-thickness: 1px;
 }
 
 @media (max-width: 640px) {

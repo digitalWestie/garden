@@ -7,9 +7,11 @@ title: Home
 
 <img class="profile-picture" src="<%= relative_url '/images/moon-profile-d.png' %>" alt="Profile picture" />
 
-I'm Rory, a technology consultant, trainer, and creative technologist based in Edinburgh. Since graduating in 2009 I've been self-employed, working with individuals, startups, universities, agencies, and the public sector.
+I'm Rory. Based in Edinburgh, I work as a technical partner for design-led agencies and innovation studios. I help turn deep insight into working software - from early proposal through to delivery.
 
-I help organisations take early ideas through to working software, and I help people get better at doing that themselves - through training, coaching, and occasionally just thinking it through together. I'm a generalist by nature, and I tend to thrive in the spaces between disciplines.
+If your studio wins work that needs real development, or you’re writing a proposal and want to know what’s actually possible, that’s the work I do. Design-led teams create rich insight from co-design, research, ethnography, and related practice; I help make sure it doesn’t get lost in technical implementation.
+
+Working independently with clients since 2009, I’ve spent much of that time as a hands-on full-stack developer, taking early ideas through to production for startups, agencies, universities, and the public sector. Alongside delivery I’ve trained and mentored others in software development and open data. I’ve collaborated closely with designers and researchers on design-led and civic tech projects. These days my focus is partnering with studios on work that needs serious technical judgment.
 
 <span class="marker">*</span> Here you can find:
 
