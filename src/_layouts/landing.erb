@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="<%= site.locale %>">
+  <head>
+    <%= render "head", metadata: site.metadata, title: data.title, data: data, resource: resource %>
+  </head>
+  <body class="landing">
+    <header class="landing-topbar">
+      <a class="landing-topbar__brand" href="<%= relative_url '/' %>">
+        <img class="landing-topbar__logo" src="<%= relative_url '/images/logo.svg' %>" alt="<%= site.metadata.title %>" width="32" height="32" />
+      </a>
+      <a class="landing-topbar__cta" href="mailto:<%= site.metadata.email %>">Contact</a>
+    </header>
+
+    <main class="landing-main">
+      <%= yield %>
+    </main>
+
+    <footer class="landing-footer">
+      <ul class="landing-footer__nav">
+        <li><a href="<%= relative_url '/projects/' %>">Projects</a></li>
+        <li><a href="<%= relative_url '/posts/' %>">Posts</a></li>
+        <li><a href="<%= relative_url '/garden/' %>">Garden</a></li>
+      </ul>
+      <p class="landing-footer__meta">&copy; <%= Time.now.year %> <%= site.metadata.title %></p>
+      <a class="landing-footer__mail" href="mailto:<%= site.metadata.email %>"><%= site.metadata.email %></a>
+    </footer>
+  </body>
+</html>
