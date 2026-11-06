@@ -43,8 +43,8 @@ title: Rory Gianni
       <li>Innovation consultancies</li>
     </ul>
 
-    <figure style="left: 0;" class="landing-who__clients">
-      <img src="<%= relative_url '/images/clients.jpeg' %>" alt="Logos of organisations Rory has worked with" />
+    <figure class="landing-who__clients">
+      <img src="<%= relative_url '/images/clients-horizontal.jpeg' %>" alt="Logos of organisations Rory has worked with" width="2620" height="190" />
     </figure>
   </div>
 </section>

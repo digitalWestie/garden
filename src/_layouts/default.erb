@@ -12,7 +12,7 @@
         <%= render Shared::GardenBreadcrumb.new(resource: resource) %>
 
         <% if feature_image_url.present? %>
-          <div class="feature-image" style="background-image: url('<%= feature_image_url %>');">
+          <div class="feature-image" style="background-image: url('<%= feature_image_url %>'); <%= data["featureImageStyle"] if data["featureImageStyle"].present? %>">
           </div>
         <% end %>
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "A Doom Ride-Along: Understanding 2.5D Rendering"
 date:   2026-09-03 16:44:40 +0000
-categories: programming, games
+categories: programming,games
 slug: a-doom-ride-along-understanding-2-5d-rendering
 featureImage: "/images/2026/ridealong.png"
 excerpt: "Learning Doom-style 2.5D rendering by converting map coordinatess to screen pixels using Ruby, Spinel, and SDL."

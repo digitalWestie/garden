@@ -616,17 +616,21 @@ body.landing .landing-who__list {
 }
 
 body.landing .landing-who__clients {
-  width: min(100%, 16rem);
-  max-width: 16rem;
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: none;
+  margin: clamp(0.5rem, 2vw, 1rem) 0 0;
   border: none;
   background: transparent;
-  overflow: hidden;
 }
 
 body.landing .landing-who__clients img {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 2620 / 190;
+  object-fit: contain;
+  object-position: center left;
   filter: grayscale(1) contrast(0.92) brightness(1.08);
   opacity: 0.45;
   mix-blend-mode: multiply;
