@@ -4,15 +4,22 @@
 <% page_description = strip_html(strip_newlines(data.excerpt.presence || data.description.presence || metadata.description)) %>
 <% feature_image = data["featureImage"].presence || data["image"].presence %>
 <% page_url = absolute_url(resource.relative_url) %>
-<% og_title = resource_title != "Index" ? resource_title : metadata.title %>
-<title><% if resource_title != "Index" %><%= resource_title %> | <%= metadata.title %><% else %><%= metadata.title %>: <%= metadata.tagline %><% end %></title>
+<% is_home = resource.relative_url.to_s.delete_suffix("/") == "" %>
+<% if is_home %>
+  <% document_title = "#{metadata.title} — #{metadata.tagline}" %>
+  <% og_title = document_title %>
+<% else %>
+  <% document_title = "#{resource_title} | #{metadata.title}" %>
+  <% og_title = resource_title %>
+<% end %>
+<title><%= document_title %></title>
 
 <meta name="description" content="<%= page_description %>" />
 
 <meta property="og:site_name" content="<%= metadata.title %>" />
 <meta property="og:title" content="<%= og_title %>" />
 <meta property="og:description" content="<%= page_description %>" />
-<meta property="og:type" content="<%= resource_title != "Index" ? "article" : "website" %>" />
+<meta property="og:type" content="<%= is_home ? "website" : "article" %>" />
 <meta property="og:url" content="<%= page_url %>" />
 <% if feature_image.present? %>
 <meta property="og:image" content="<%= absolute_url(feature_image) %>" />

@@ -8,7 +8,23 @@
       <a class="landing-topbar__brand" href="<%= relative_url '/' %>">
         <img class="landing-topbar__logo" src="<%= relative_url '/images/logo.svg' %>" alt="<%= site.metadata.title %>" width="32" height="32" />
       </a>
-      <a class="landing-topbar__cta" href="mailto:<%= site.metadata.email %>">Contact</a>
+      <details class="landing-menu">
+        <summary class="landing-menu__toggle" aria-label="Menu">
+          <span class="landing-menu__icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </summary>
+        <ul class="landing-menu__list">
+          <li><a href="<%= relative_url '/projects/' %>">Projects</a></li>
+          <li><a href="<%= relative_url '/posts/' %>">Posts</a></li>
+          <li><a href="<%= relative_url '/garden/' %>">Garden</a></li>
+          <% if Bridgetown.env.development? -%>
+          <li><a href="<%= relative_url '/theme/' %>">Theme</a></li>
+          <% end -%>
+        </ul>
+      </details>
     </header>
 
     <main class="landing-main">
