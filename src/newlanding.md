@@ -5,21 +5,24 @@ title: Rory Gianni
 
 <div class="landing-frame">
   <section class="landing-hero">
-    <div class="landing-hero__copy">
-      <p class="landing-hero__name">Hello, I'm Rory</p>
-      <h1 class="landing-hero__headline"><em>Technical partner for design-led teams</em></h1>
-      <p class="landing-hero__support">Human-centred design creates rich insight. I help make sure it doesn't get lost in technical design and implementation.</p>
-      <a class="landing-hero__cta" href="mailto:<%= site.metadata.email %>">Get in touch</a>
-    </div>
+    <h1 class="landing-hero__headline"><em>You've designed something brilliant, let's make it work</em></h1>
     <figure class="landing-hero__visual">
       <img src="<%= relative_url '/images/peach-headshot.jpg' %>" alt="Portrait of Rory Gianni" width="800" height="1000" />
     </figure>
+    <div class="landing-hero__copy">
+      <p class="landing-hero__support">Design-led teams create deep insights. I help turn those outputs into working software without losing the thinking, ideas, and vision that makes it special.</p>
+      <a class="landing-hero__cta" href="mailto:<%= site.metadata.email %>">Let's talk</a>
+    </div>
   </section>
 </div>
 
 <section class="landing-section landing-section--band" id="what">
   <div class="landing-section__inner">
-    <h2>Complementing design practice with technical expertise</h2>
+    <h2>Complimenting thoughtful design</h2>
+    <p class="landing-section__lead">
+      Design practice deserves technical implementation that reflects the quality of your work.
+    </p>
+
     <p class="landing-section__lead">
       I've been working independently for 15+ years as technology consultant and full-stack developer; taking early ideas through to production for startups, agencies, universities, and the public sector. Alongside delivery I’ve trained and mentored others in software development and open data. I’ve collaborated closely with design practitioners in design-led research and civic tech projects.
     </p>
